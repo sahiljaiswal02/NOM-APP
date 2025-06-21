@@ -36,15 +36,36 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
-    type: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+
+    const formDataToSend = new FormData();
+    formDataToSend.append("entry.2056182173", formData.name);
+    formDataToSend.append("entry.928305668", formData.email);
+    formDataToSend.append("entry.184632566", formData.message);
+
+    fetch(
+      "https://docs.google.com/forms/d/e/1FAIpQLSdpqxcRYrFzKrQot5NaQu9YcuWSsfu5nUfUFD2Wmmm_NZHMSg/formResponse",
+      {
+        method: "POST",
+        mode: "no-cors",
+        body: formDataToSend,
+      }
+    )
+      .then(() => {
+        alert("Thank you! Your message has been sent. ✅");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch(() => {
+        alert("Oops! Something went wrong. Please try again later.");
+      });
   };
 
   const handleInputChange = (field: string, value: string) => {
