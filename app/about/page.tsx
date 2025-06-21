@@ -199,7 +199,7 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="text-slate-800">Arjun 🚀</CardTitle>
                 <CardDescription className="text-slate-600">
-                  Product Visionary
+                  Founder
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -219,7 +219,7 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="text-slate-800">Sahil 💡</CardTitle>
                 <CardDescription className="text-slate-600">
-                  Founder & Dev Lead
+                  Founder
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -239,7 +239,7 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="text-slate-800">Ahmad 🔍</CardTitle>
                 <CardDescription className="text-slate-600">
-                  AI Researcher
+                  Founder
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -262,7 +262,7 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="text-slate-800">Aniket 🛠️</CardTitle>
                 <CardDescription className="text-slate-600">
-                  UX Engineer
+                  Founder
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -281,7 +281,7 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="text-slate-800">Brien 📈</CardTitle>
                 <CardDescription className="text-slate-600">
-                  Marketing Wizard
+                  Founder
                 </CardDescription>
               </CardHeader>
               <CardContent>
