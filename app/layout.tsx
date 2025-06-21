@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description:
     "Create perfect meals with AI from local restaurants and get them delivered to your door.",
   generator: "v0.dev",
+  icons: {
+    icon: { url: "/favicon.png", type: "image/png" },
+  },
 };
 
 export default function RootLayout({

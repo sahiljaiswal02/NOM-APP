@@ -188,106 +188,105 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white border-4 border-orange-200 doodle-blob text-center relative">
+          {/* Top Row - 3 Members */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            {/* Arjun */}
+            <Card className="bg-white border-4 border-orange-200 doodle-blob text-center relative w-full max-w-sm">
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-yellow-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
-                <div className="w-24 h-24 bg-gradient-to-r from-orange-400 to-orange-500 doodle-circle mx-auto mb-4 flex items-center justify-center wiggle">
-                  <span className="text-2xl font-bold text-white">AS</span>
+                <div className="w-24 h-24 bg-gradient-to-r from-orange-400 to-orange-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
+                  <span className="text-2xl font-bold text-white">AR</span>
                 </div>
-                <CardTitle className="text-slate-800">Alex Smith 👨‍💼</CardTitle>
+                <CardTitle className="text-slate-800">Arjun 🚀</CardTitle>
                 <CardDescription className="text-slate-600">
-                  CEO & Co-Founder
+                  Product Visionary
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-sm">
-                  Former Google AI researcher with 10+ years in machine
-                  learning. Passionate about using AI to solve real-world
-                  problems! 🧠
+                  Designs with purpose and always finds the “why” behind every
+                  pixel. 🧩
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-4 border-pink-200 doodle-blob text-center relative">
+            {/* Sahil */}
+            <Card className="bg-white border-4 border-pink-200 doodle-blob text-center relative w-full max-w-sm">
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-r from-pink-400 to-pink-500 doodle-circle mx-auto mb-4 flex items-center justify-center bounce-gentle">
-                  <span className="text-2xl font-bold text-white">MJ</span>
+                  <span className="text-2xl font-bold text-white">SJ</span>
                 </div>
-                <CardTitle className="text-slate-800">
-                  Maria Johnson 👩‍💻
-                </CardTitle>
+                <CardTitle className="text-slate-800">Sahil 💡</CardTitle>
                 <CardDescription className="text-slate-600">
-                  CTO & Co-Founder
+                  Founder & Dev Lead
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-sm">
-                  Ex-Uber engineering lead who built scalable food delivery
-                  systems. Expert in logistics and real-time optimization! ⚡
+                  The brain behind the code and the strategy. Dream big, build
+                  bigger. 💻
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-4 border-pink-200 doodle-blob text-center relative">
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-300 doodle-circle bounce-gentle"></div>
-              <CardHeader>
-                <div className="w-24 h-24 bg-gradient-to-r from-pink-400 to-pink-500 doodle-circle mx-auto mb-4 flex items-center justify-center bounce-gentle">
-                  <span className="text-2xl font-bold text-white">MJ</span>
-                </div>
-                <CardTitle className="text-slate-800">
-                  Maria Johnson 👩‍💻
-                </CardTitle>
-                <CardDescription className="text-slate-600">
-                  CTO & Co-Founder
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-600 text-sm">
-                  Ex-Uber engineering lead who built scalable food delivery
-                  systems. Expert in logistics and real-time optimization! ⚡
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white border-4 border-pink-200 doodle-blob text-center relative">
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-300 doodle-circle bounce-gentle"></div>
-              <CardHeader>
-                <div className="w-24 h-24 bg-gradient-to-r from-pink-400 to-pink-500 doodle-circle mx-auto mb-4 flex items-center justify-center bounce-gentle">
-                  <span className="text-2xl font-bold text-white">MJ</span>
-                </div>
-                <CardTitle className="text-slate-800">
-                  Maria Johnson 👩‍💻
-                </CardTitle>
-                <CardDescription className="text-slate-600">
-                  CTO & Co-Founder
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-600 text-sm">
-                  Ex-Uber engineering lead who built scalable food delivery
-                  systems. Expert in logistics and real-time optimization! ⚡
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white border-4 border-purple-200 doodle-blob text-center relative">
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-pink-300 doodle-circle bounce-gentle"></div>
+            {/* Ahmad */}
+            <Card className="bg-white border-4 border-purple-200 doodle-blob text-center relative w-full max-w-sm">
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-purple-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-r from-purple-400 to-purple-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
-                  <span className="text-2xl font-bold text-white">DC</span>
+                  <span className="text-2xl font-bold text-white">AH</span>
                 </div>
-                <CardTitle className="text-slate-800">David Chen 👨‍⚕️</CardTitle>
+                <CardTitle className="text-slate-800">Ahmad 🔍</CardTitle>
                 <CardDescription className="text-slate-600">
-                  Head of Nutrition
+                  AI Researcher
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-sm">
-                  Registered dietitian and former nutrition consultant for
-                  professional athletes. Ensures every meal meets the highest
-                  standards! 🏆
+                  Obsessed with algorithms, neural nets, and late-night
+                  breakthroughs. 🤖
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Bottom Row - Centered 2 Members */}
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-8">
+            {/* Aniket */}
+            <Card className="bg-white border-4 border-blue-200 doodle-blob text-center relative w-full max-w-sm">
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-300 doodle-circle bounce-gentle"></div>
+              <CardHeader>
+                <div className="w-24 h-24 bg-gradient-to-r from-blue-400 to-blue-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
+                  <span className="text-2xl font-bold text-white">AK</span>
+                </div>
+                <CardTitle className="text-slate-800">Aniket 🛠️</CardTitle>
+                <CardDescription className="text-slate-600">
+                  UX Engineer
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">
+                  Turns ideas into beautiful and intuitive user experiences. 🎨
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Brien */}
+            <Card className="bg-white border-4 border-green-200 doodle-blob text-center relative w-full max-w-sm">
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-300 doodle-circle bounce-gentle"></div>
+              <CardHeader>
+                <div className="w-24 h-24 bg-gradient-to-r from-green-400 to-green-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
+                  <span className="text-2xl font-bold text-white">BR</span>
+                </div>
+                <CardTitle className="text-slate-800">Brien 📈</CardTitle>
+                <CardDescription className="text-slate-600">
+                  Marketing Wizard
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">
+                  From campaigns to conversions, he’s the growth engine. 🚀
                 </p>
               </CardContent>
             </Card>

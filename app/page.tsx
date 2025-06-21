@@ -121,7 +121,7 @@ export default function LandingPage() {
             <Card className="bg-white border-4 border-orange-200 doodle-blob hover:border-orange-300 transition-all duration-300 transform hover:scale-105 relative overflow-hidden">
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-300 doodle-circle"></div>
               <CardHeader className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-orange-400 to-orange-500 doodle-circle flex items-center justify-center mx-auto mb-4 shadow-lg wiggle">
+                <div className="w-20 h-20 bg-gradient-to-r from-orange-400 to-orange-500 doodle-circle flex items-center justify-center mx-auto mb-4 shadow-lg float">
                   <span className="text-3xl font-bold text-white">1</span>
                 </div>
                 <CardTitle className="text-xl text-slate-800">

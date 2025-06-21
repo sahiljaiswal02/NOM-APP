@@ -1,16 +1,36 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ArrowRight, Mail, Phone, MapPin, Clock, MessageSquare, Send } from "lucide-react"
-import { Navbar } from "@/components/navbar"
+import type React from "react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  ArrowRight,
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  MessageSquare,
+  Send,
+} from "lucide-react";
+import { Navbar } from "@/components/navbar";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -19,17 +39,17 @@ export default function ContactPage() {
     subject: "",
     message: "",
     type: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
-  }
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
@@ -58,7 +78,8 @@ export default function ContactPage() {
             🤝
           </h1>
           <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            Nom is currently raising its pre-seed round. Reach out to us for investment opportunities.✨
+            Nom is currently raising its pre-seed round. Reach out to us for
+            investment opportunities.✨
           </p>
         </div>
       </section>
@@ -71,36 +92,49 @@ export default function ContactPage() {
             <Card className="bg-white border-4 border-orange-200 doodle-blob relative">
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
-                <CardTitle className="text-2xl text-slate-800">Send us a Message 📝</CardTitle>
+                <CardTitle className="text-2xl text-slate-800">
+                  Send us a Message 📝
+                </CardTitle>
                 <CardDescription className="text-slate-600">
-                  Fill out the form below and we'll get back to you within 24 hours! ⚡
+                  Fill out the form below and we'll get back to you within 24
+                  hours! ⚡
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-slate-700 font-medium">
+                      <Label
+                        htmlFor="name"
+                        className="text-slate-700 font-medium"
+                      >
                         Name 👤
                       </Label>
                       <Input
                         id="name"
                         value={formData.name}
-                        onChange={(e) => handleInputChange("name", e.target.value)}
+                        onChange={(e) =>
+                          handleInputChange("name", e.target.value)
+                        }
                         className="bg-orange-50 border-2 border-orange-200 text-slate-800 rounded-2xl focus:border-orange-400"
                         placeholder="Your awesome name"
                         required
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-slate-700 font-medium">
+                      <Label
+                        htmlFor="email"
+                        className="text-slate-700 font-medium"
+                      >
                         Email 📧
                       </Label>
                       <Input
                         id="email"
                         type="email"
                         value={formData.email}
-                        onChange={(e) => handleInputChange("email", e.target.value)}
+                        onChange={(e) =>
+                          handleInputChange("email", e.target.value)
+                        }
                         className="bg-orange-50 border-2 border-orange-200 text-slate-800 rounded-2xl focus:border-orange-400"
                         placeholder="your@email.com"
                         required
@@ -109,46 +143,18 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="type" className="text-slate-700 font-medium">
-                      Inquiry Type 🏷️
-                    </Label>
-                    <Select onValueChange={(value) => handleInputChange("type", value)}>
-                      <SelectTrigger className="bg-orange-50 border-2 border-orange-200 text-slate-800 rounded-2xl">
-                        <SelectValue placeholder="Select inquiry type" />
-                      </SelectTrigger>
-                      <SelectContent className="bg-white border-2 border-orange-200 rounded-2xl">
-                        <SelectItem value="general">General Question 🤔</SelectItem>
-                        <SelectItem value="support">Customer Support 🛠️</SelectItem>
-                        <SelectItem value="partnership">Restaurant Partnership 🏪</SelectItem>
-                        <SelectItem value="press">Press & Media 📰</SelectItem>
-                        <SelectItem value="careers">Careers 💼</SelectItem>
-                        <SelectItem value="enterprise">Enterprise Sales 🏢</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-slate-700 font-medium">
-                      Subject 📋
-                    </Label>
-                    <Input
-                      id="subject"
-                      value={formData.subject}
-                      onChange={(e) => handleInputChange("subject", e.target.value)}
-                      className="bg-orange-50 border-2 border-orange-200 text-slate-800 rounded-2xl focus:border-orange-400"
-                      placeholder="What's this about?"
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-slate-700 font-medium">
+                    <Label
+                      htmlFor="message"
+                      className="text-slate-700 font-medium"
+                    >
                       Message 💬
                     </Label>
                     <Textarea
                       id="message"
                       value={formData.message}
-                      onChange={(e) => handleInputChange("message", e.target.value)}
+                      onChange={(e) =>
+                        handleInputChange("message", e.target.value)
+                      }
                       className="bg-orange-50 border-2 border-orange-200 text-slate-800 rounded-2xl min-h-[120px] focus:border-orange-400"
                       placeholder="Tell us more about what you need..."
                       required
@@ -167,29 +173,36 @@ export default function ContactPage() {
             </Card>
 
             {/* Contact Information */}
-            <div className="space-y-8">
-              <Card className="bg-white border-4 border-orange-200 doodle-blob relative">
-                <div className="absolute -top-2 -right-2 w-4 h-4 bg-yellow-300 doodle-circle bounce-gentle"></div>
-                <CardHeader>
-                  <CardTitle className="text-slate-800 flex items-center">
-                    <Mail className="w-5 h-5 mr-2 text-orange-500" />
-                    Email Us 📧
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div>
-                    <p className="text-slate-700 font-medium">General Inquiries 💬</p>
-                    <p className="text-slate-600">nomapp@proton.me</p>
-                  </div>
-                  
-                </CardContent>
-              </Card>
+            <div className="py-16 px-4 relative z-[2]">
+              <div className="max-w-xl mx-auto space-y-8 text-center">
+                <h2 className="text-4xl font-bold text-slate-800">
+                  Get in Touch ✉️
+                </h2>
+                <p className="text-lg text-slate-600">
+                  We’re happy to hear from you. Reach out anytime!
+                </p>
+
+                <Card className="bg-white border-4 border-orange-200 doodle-blob relative shadow-md">
+                  <div className="absolute -top-2 -right-2 w-4 h-4 bg-yellow-300 doodle-circle bounce-gentle"></div>
+                  <CardHeader className="flex justify-center">
+                    <CardTitle className="text-slate-800 flex items-center text-xl font-semibold">
+                      <Mail className="w-5 h-5 mr-2 text-orange-500" />
+                      Email Us 📧
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-2 px-6 pb-10 text-left">
+                    <div>
+                      <p className="text-slate-700 font-semibold mb-1">
+                        nomapp@proton.me
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      
     </div>
-  )
+  );
 }
