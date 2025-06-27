@@ -195,7 +195,12 @@ export default function AboutPage() {
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-yellow-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-r from-orange-400 to-orange-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
-                  <span className="text-2xl font-bold text-white">AR</span>
+                  {/* <span className="text-2xl font-bold text-white">AR</span> */}
+                  <img
+                    src="/Arjun.png"
+                    className="w-24 h-24 border-4 doodle-circle"
+                    alt=""
+                  />
                 </div>
                 <CardTitle className="text-slate-800">Arjun 🚀</CardTitle>
                 <CardDescription className="text-slate-600">
@@ -215,7 +220,12 @@ export default function AboutPage() {
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-r from-pink-400 to-pink-500 doodle-circle mx-auto mb-4 flex items-center justify-center bounce-gentle">
-                  <span className="text-2xl font-bold text-white">SJ</span>
+                  {/* <span className="text-2xl font-bold text-white">SJ</span> */}
+                  <img
+                    src="/Sahil.jpeg"
+                    className="w-24 h-24 border-4 doodle-circle"
+                    alt=""
+                  />
                 </div>
                 <CardTitle className="text-slate-800">Sahil 💡</CardTitle>
                 <CardDescription className="text-slate-600">
@@ -235,7 +245,12 @@ export default function AboutPage() {
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-purple-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-r from-purple-400 to-purple-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
-                  <span className="text-2xl font-bold text-white">AH</span>
+                  {/* <span className="text-2xl font-bold text-white">AH</span> */}
+                  <img
+                    src="/Ahmad.jpeg"
+                    className="w-24 h-24 border-4 doodle-circle"
+                    alt=""
+                  />
                 </div>
                 <CardTitle className="text-slate-800">Ahmad 🔍</CardTitle>
                 <CardDescription className="text-slate-600">
@@ -258,7 +273,12 @@ export default function AboutPage() {
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-300 doodle-circle bounce-gentle"></div>
               <CardHeader>
                 <div className="w-24 h-24 bg-gradient-to-r from-blue-400 to-blue-500 doodle-circle mx-auto mb-4 flex items-center justify-center float">
-                  <span className="text-2xl font-bold text-white">AK</span>
+                  {/* <span className="text-2xl font-bold text-white">AK</span> */}
+                  <img
+                    src="/Aniket.jpeg"
+                    className="w-24 h-24 border-4 doodle-circle"
+                    alt=""
+                  />
                 </div>
                 <CardTitle className="text-slate-800">Aniket 🛠️</CardTitle>
                 <CardDescription className="text-slate-600">
