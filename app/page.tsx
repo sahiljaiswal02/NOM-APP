@@ -188,7 +188,7 @@ export default function LandingPage() {
               size="lg"
               className="bg-slate-900 text-white hover:bg-slate-800 text-base px-8 py-6 rounded-full font-medium group"
             >
-              Get Started
+              Coming Soon
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -487,13 +487,15 @@ export default function LandingPage() {
                 Join thousands of food lovers who've discovered the perfect way
                 to eat.
               </p>
-              <Button
-                size="lg"
-                className="bg-orange-500 text-white hover:bg-orange-600 text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/25 group"
-              >
-                Start Your Journey
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-orange-500 text-white hover:bg-orange-600 text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/25 group"
+                >
+                  Start Your Journey
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
