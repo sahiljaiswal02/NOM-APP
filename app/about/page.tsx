@@ -104,7 +104,9 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            Not just what is available. Not just what's nearby. What your mind, body, and soul truly need. We're building the universal API for intentional eating.
+            Not just what is available. Not just what's nearby. What your mind,
+            body, and soul truly need. We're building the universal API for
+            intentional eating.
           </p>
         </div>
       </section>
@@ -137,10 +139,14 @@ export default function AboutPage() {
                 </h2>
               </div>
               <p className="text-lg text-slate-500 mb-6 font-light leading-relaxed">
-                To help humanity eat with intention by understanding what your mind, body, and soul truly need—not just what's available or nearby.
+                To help humanity eat with intention by understanding what your
+                mind, body, and soul truly need—not just what's available or
+                nearby.
               </p>
               <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                We're occupying an entirely new category: Emotional + Intent-Based Meal Intelligence. No one does this—understanding psychological states and translating them into nourishment.
+                We're occupying an entirely new category: Emotional +
+                Intent-Based Meal Intelligence. No one does this—understanding
+                psychological states and translating them into nourishment.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center text-slate-600">
@@ -159,7 +165,9 @@ export default function AboutPage() {
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
-                  <span>Blue ocean strategy in crowded food delivery space</span>
+                  <span>
+                    Blue ocean strategy in crowded food delivery space
+                  </span>
                 </div>
               </div>
             </div>
@@ -198,7 +206,9 @@ export default function AboutPage() {
                       The Idea
                     </h3>
                     <p className="text-slate-500 font-light leading-relaxed">
-                      "What if food understood your mind, body, and moments?" This question sparked the creation of NOM—the world's first intent-based meal recommendation engine.
+                      "What if food understood your mind, body, and moments?"
+                      This question sparked the creation of NOM—the world's
+                      first intent-based meal recommendation engine.
                     </p>
                   </div>
                 </CardContent>
@@ -271,7 +281,9 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Five converging forces: AI breakthroughs, massive market, wellness demand, agency shift, and platform hunger—all aligning perfectly for our launch.
+                  Five converging forces: AI breakthroughs, massive market,
+                  wellness demand, agency shift, and platform hunger—all
+                  aligning perfectly for our launch.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -288,7 +300,9 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Our business model revolves around licensing our powerful B2B SaaS API to major food delivery platforms, enabling them to enhance profitability through intelligent matching.
+                  Our business model revolves around licensing our powerful B2B
+                  SaaS API to major food delivery platforms, enabling them to
+                  enhance profitability through intelligent matching.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -305,7 +319,9 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Food delivery is a $500B+ global market with zero innovation in discovery mechanisms. We're the first to address contextual, emotional food discovery.
+                  Food delivery is a $500B+ global market with zero innovation
+                  in discovery mechanisms. We're the first to address
+                  contextual, emotional food discovery.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -415,14 +431,14 @@ export default function AboutPage() {
                     />
                   </div>
                   {/* Role badge */}
-                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-slate-700 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
                     CPO
                   </div>
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-lg mt-2">
                   Sahil
                 </CardTitle>
-                <CardDescription className="text-slate-500 font-medium text-sm">
+                <CardDescription className="text-orange-500 font-medium text-sm">
                   Co-Founder
                 </CardDescription>
               </CardHeader>
@@ -482,14 +498,14 @@ export default function AboutPage() {
                     />
                   </div>
                   {/* Role badge */}
-                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-slate-700 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
+                  <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
                     CSO
                   </div>
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-lg mt-2">
                   Aniket
                 </CardTitle>
-                <CardDescription className="text-slate-500 font-medium text-sm">
+                <CardDescription className="text-orange-500 font-medium text-sm">
                   Co-Founder
                 </CardDescription>
               </CardHeader>
@@ -500,13 +516,13 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            {/* Brien */}
+            {/* Vishnu */}
             <Card className="bg-white border-2 border-slate-100 shadow-none hover:shadow-xl hover:border-orange-200 transition-all duration-300 rounded-3xl overflow-hidden group relative text-center w-full max-w-sm">
               <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-orange-200 rounded-tr-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <CardHeader className="pb-2">
                 <div className="relative inline-block mx-auto mb-4">
-                  <div className="w-24 h-24 rounded-2xl overflow-hidden border-4 border-orange-100 group-hover:border-orange-200 transition-colors bg-gradient-to-br from-orange-400 to-orange-500 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">BR</span>
+                  <div className="w-24 h-24 rounded-2xl overflow-hidden border-4 border-orange-100 group-hover:border-orange-200 transition-colors bg-gradient-to-br from-orange-400 to-orange-300 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-white">VI</span>
                   </div>
                   {/* Role badge */}
                   <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-medium px-3 py-1 rounded-full whitespace-nowrap">
@@ -514,7 +530,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-lg mt-2">
-                  Brien
+                  Vishnu
                 </CardTitle>
                 <CardDescription className="text-orange-500 font-medium text-sm">
                   Co-Founder
