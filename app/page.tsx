@@ -14,6 +14,10 @@ import {
   Brain,
   CheckCircle,
   Sparkles,
+  TrendingUp,
+  Zap,
+  Layers,
+  Target,
 } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
@@ -127,7 +131,7 @@ export default function LandingPage() {
             deliver the perfect meal.
           </p>
 
-          {/* Interactive Example */}
+          {/* Interactive Example / Terminal */}
           <div className="bg-slate-50 rounded-3xl p-8 mb-12 max-w-2xl mx-auto border border-slate-200 relative">
             {/* Corner doodles */}
             <svg
@@ -168,11 +172,12 @@ export default function LandingPage() {
             </div>
             <div className="text-left">
               <p className="text-slate-400 text-sm mb-3">Example prompt:</p>
-              <div className="bg-white rounded-2xl p-4 mb-4 border border-slate-200 shadow-sm">
+              <div className="bg-white rounded-2xl p-4 mb-3 border border-slate-200 shadow-sm">
                 <p className="text-base font-mono text-slate-700">
                   "I'm anxious—what should I eat?"
                 </p>
               </div>
+
               <div className="flex items-center text-orange-600 bg-orange-50 rounded-2xl p-4 border border-orange-100">
                 <CheckCircle className="w-5 h-5 mr-3 flex-shrink-0" />
                 <span className="text-sm font-medium">
@@ -189,7 +194,6 @@ export default function LandingPage() {
               className="bg-slate-900 text-white hover:bg-slate-800 text-base px-8 py-6 rounded-full font-medium group"
             >
               Coming Soon
-              {/* <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" /> */}
             </Button>
             <Button
               size="lg"
@@ -202,8 +206,447 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Problem Section */}
+      <section className="py-24 px-4 relative">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-20 w-24 h-24 border-2 border-orange-100 rounded-full opacity-50"></div>
+        <div className="absolute bottom-20 left-16 w-16 h-16 border-2 border-slate-100 rounded-full opacity-40"></div>
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-orange-300 rounded-full opacity-60"></div>
+        <div className="absolute bottom-32 right-1/4 w-3 h-3 bg-slate-300 rounded-full opacity-40"></div>
+
+        <svg
+          className="absolute top-16 left-10 w-24 h-8 text-orange-200 opacity-60"
+          viewBox="0 0 100 20"
+        >
+          <path
+            d="M0,10 Q12,0 25,10 T50,10 T75,10 T100,10"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl mb-6">
+              <Target className="w-7 h-7 text-orange-500" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4 tracking-tight">
+              Food Discovery Is Fundamentally Broken
+            </h2>
+            <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">
+              The way we choose what to eat is stuck in the past—endless
+              options, zero understanding.
+            </p>
+          </div>
+
+          {/* Problem Cards Grid */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {/* Problem 1 - Endless Scrolling */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-orange-400 rounded-3xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+              <div className="relative bg-white rounded-3xl p-6 border-2 border-slate-100 group-hover:border-orange-200 group-hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                {/* Visual Container - Fixed Height */}
+                <div className="mb-5 relative h-[140px]">
+                  <div className="bg-slate-50 rounded-2xl p-4 h-full flex flex-col justify-center">
+                    <div className="space-y-2">
+                      {[...Array(4)].map((_, i) => (
+                        <div
+                          key={i}
+                          className={`flex items-center gap-2.5 transition-all duration-300 ${
+                            i > 2
+                              ? "opacity-30"
+                              : i > 1
+                              ? "opacity-50"
+                              : "opacity-100"
+                          } group-hover:translate-y-[-2px]`}
+                          style={{ transitionDelay: `${i * 50}ms` }}
+                        >
+                          <div
+                            className={`w-7 h-7 rounded-lg flex items-center justify-center ${
+                              i === 0 ? "bg-orange-100" : "bg-slate-200"
+                            }`}
+                          >
+                            <div
+                              className={`w-3.5 h-3.5 rounded ${
+                                i === 0 ? "bg-orange-300" : "bg-slate-300"
+                              }`}
+                            ></div>
+                          </div>
+                          <div className="flex-1 space-y-1">
+                            <div
+                              className={`h-1.5 rounded-full ${
+                                i === 0
+                                  ? "bg-orange-200 w-3/4"
+                                  : "bg-slate-200 w-full"
+                              }`}
+                            ></div>
+                            <div
+                              className={`h-1 rounded-full ${
+                                i === 0
+                                  ? "bg-orange-100 w-1/2"
+                                  : "bg-slate-100 w-2/3"
+                              }`}
+                            ></div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Emoji indicator */}
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 scale-90 group-hover:scale-100">
+                    <span className="text-sm">😩</span>
+                  </div>
+                </div>
+
+                {/* Title - Fixed Height */}
+                <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
+                  Endless Scrolling
+                </h3>
+
+                {/* Description - Fixed Height */}
+                <p className="text-slate-500 font-light text-sm leading-relaxed mb-4 flex-1">
+                  Infinite lists and categories. We compare endlessly but choose
+                  reactively.
+                </p>
+
+                {/* Stat badge - Always at bottom */}
+                <div className="mt-auto">
+                  <div className="inline-flex items-center gap-2 bg-slate-50 group-hover:bg-orange-50 rounded-full px-3 py-1.5 transition-colors duration-300">
+                    <span className="text-sm font-bold text-slate-600 group-hover:text-orange-600 transition-colors">
+                      ∞
+                    </span>
+                    <span className="text-xs text-slate-500 group-hover:text-orange-600 transition-colors">
+                      options, zero clarity
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Problem 2 - Decision Fatigue */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-slate-500 rounded-3xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+              <div className="relative bg-white rounded-3xl p-6 border-2 border-slate-100 group-hover:border-slate-300 group-hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                {/* Visual Container - Fixed Height */}
+                <div className="mb-5 relative h-[140px]">
+                  <div className="bg-slate-50 rounded-2xl p-4 h-full flex flex-col justify-center">
+                    <div className="flex items-center justify-center gap-2">
+                      {["🍕", "🍜", "🥗", "🍔"].map((emoji, i) => (
+                        <div
+                          key={i}
+                          className={`transition-all duration-300 ${
+                            i === 1 ? "scale-110 z-10" : "scale-100 opacity-50"
+                          } group-hover:scale-105`}
+                          style={{ transitionDelay: `${i * 60}ms` }}
+                        >
+                          <div
+                            className={`w-10 h-10 rounded-xl flex items-center justify-center ${
+                              i === 1
+                                ? "bg-slate-200 shadow-md"
+                                : "bg-slate-100"
+                            } group-hover:rotate-6 transition-transform duration-300`}
+                          >
+                            <span className="text-xl">{emoji}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Thinking dots */}
+                    <div className="flex justify-center mt-4 gap-1">
+                      <div
+                        className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"
+                        style={{ animationDelay: "0ms" }}
+                      ></div>
+                      <div
+                        className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"
+                        style={{ animationDelay: "150ms" }}
+                      ></div>
+                      <div
+                        className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"
+                        style={{ animationDelay: "300ms" }}
+                      ></div>
+                    </div>
+                  </div>
+
+                  {/* Emoji indicator */}
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 scale-90 group-hover:scale-100">
+                    <span className="text-sm">🤯</span>
+                  </div>
+                </div>
+
+                {/* Title - Fixed Height */}
+                <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-slate-700 transition-colors">
+                  Decision Fatigue
+                </h3>
+
+                {/* Description - Fixed Height */}
+                <p className="text-slate-500 font-light text-sm leading-relaxed mb-4 flex-1">
+                  Too many choices cause paralysis. You pick what's familiar,
+                  not what's right.
+                </p>
+
+                {/* Stat badge - Always at bottom */}
+                <div className="mt-auto">
+                  <div className="inline-flex items-center gap-2 bg-slate-50 group-hover:bg-slate-100 rounded-full px-3 py-1.5 transition-colors duration-300">
+                    <span className="text-sm font-bold text-slate-600">
+                      3+ min
+                    </span>
+                    <span className="text-xs text-slate-500">to decide</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Problem 3 - Zero Emotional Awareness */}
+            <div className="group relative">
+              <div className="absolute inset-0 bg-orange-400 rounded-3xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+              <div className="relative bg-white rounded-3xl p-6 border-2 border-slate-100 group-hover:border-orange-200 group-hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                {/* Visual Container - Fixed Height */}
+                <div className="mb-5 relative h-[140px]">
+                  <div className="bg-slate-50 rounded-2xl p-4 h-full flex flex-col justify-center">
+                    {/* Macro numbers */}
+                    <div className="grid grid-cols-3 gap-2 mb-3">
+                      {[
+                        { value: "542", label: "cal" },
+                        { value: "23g", label: "protein" },
+                        { value: "18g", label: "fat" },
+                      ].map((macro, i) => (
+                        <div
+                          key={i}
+                          className="bg-white rounded-lg p-2 text-center group-hover:scale-105 transition-transform duration-300"
+                          style={{ transitionDelay: `${i * 80}ms` }}
+                        >
+                          <div className="text-base font-bold text-slate-400">
+                            {macro.value}
+                          </div>
+                          <div className="text-[9px] text-slate-400 uppercase">
+                            {macro.label}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Emotion indicators */}
+                    <div className="flex justify-center gap-2">
+                      {["😔", "😤", "😴"].map((emoji, i) => (
+                        <div
+                          key={i}
+                          className="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center opacity-30 group-hover:opacity-70 transition-all duration-300 grayscale group-hover:grayscale-0"
+                          style={{ transitionDelay: `${i * 60}ms` }}
+                        >
+                          <span className="text-base">{emoji}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Emoji indicator */}
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 scale-90 group-hover:scale-100">
+                    <span className="text-sm">🙈</span>
+                  </div>
+                </div>
+
+                {/* Title - Fixed Height */}
+                <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
+                  Zero Emotional Awareness
+                </h3>
+
+                {/* Description - Fixed Height */}
+                <p className="text-slate-500 font-light text-sm leading-relaxed mb-4 flex-1">
+                  Apps track macros but ignore mood, energy, and what your body
+                  craves.
+                </p>
+
+                {/* Stat badge - Always at bottom */}
+                <div className="mt-auto">
+                  <div className="inline-flex items-center gap-2 bg-slate-50 group-hover:bg-orange-50 rounded-full px-3 py-1.5 transition-colors duration-300">
+                    <span className="text-sm font-bold text-slate-600 group-hover:text-orange-600 transition-colors">
+                      0%
+                    </span>
+                    <span className="text-xs text-slate-500 group-hover:text-orange-600 transition-colors">
+                      emotional context
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Insight */}
+          <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-8 relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Your emotional state matters as much as macros
+                </h3>
+                <p className="text-orange-100 font-light text-sm">
+                  NOM understands what your mind and body need—not just what's
+                  nearby.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white">87%</div>
+                  <div className="text-xs text-orange-200 font-light">
+                    feel overwhelmed
+                  </div>
+                </div>
+                <div className="w-px h-12 bg-white/20"></div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white">12+</div>
+                  <div className="text-xs text-orange-200 font-light">
+                    apps abandoned
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Opportunity Section */}
       <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white relative">
+        {/* Decorative elements */}
+        <svg
+          className="absolute top-10 right-10 w-24 h-24 text-orange-100"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            r="45"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeDasharray="8 6"
+          />
+        </svg>
+
+        <svg
+          className="absolute bottom-20 left-16 w-16 h-16 text-slate-200"
+          viewBox="0 0 80 80"
+        >
+          <rect
+            x="10"
+            y="10"
+            width="60"
+            height="60"
+            rx="12"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeDasharray="5 5"
+          />
+        </svg>
+
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-orange-400 rounded-full opacity-50"></div>
+        <div className="absolute top-1/3 left-1/3 w-3 h-3 bg-slate-300 rounded-full opacity-30"></div>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-slate-100 to-slate-50 rounded-2xl mb-6">
+              <TrendingUp className="w-7 h-7 text-slate-600" />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4 tracking-tight">
+              A £500B+ Opportunity at the Intersection of Food, Emotion & AI
+            </h2>
+            <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">
+              Food delivery is a massive global market with almost no innovation
+              in how people discover what to eat.
+            </p>
+          </div>
+
+          {/* Converging Forces */}
+          <div className="grid md:grid-cols-5 gap-4">
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center group">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Brain className="w-6 h-6 text-orange-500" />
+              </div>
+              <h4 className="font-semibold text-slate-900 text-sm mb-2">
+                AI Breakthroughs
+              </h4>
+              <p className="text-xs text-slate-500 font-light">
+                LLMs understand human intent
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center group">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-100 to-slate-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Sparkles className="w-6 h-6 text-slate-600" />
+              </div>
+              <h4 className="font-semibold text-slate-900 text-sm mb-2">
+                Wellness Boom
+              </h4>
+              <p className="text-xs text-slate-500 font-light">
+                Health-conscious consumers
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center group">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Target className="w-6 h-6 text-orange-500" />
+              </div>
+              <h4 className="font-semibold text-slate-900 text-sm mb-2">
+                Intentional Living
+              </h4>
+              <p className="text-xs text-slate-500 font-light">
+                Mindful consumption shift
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center group">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-100 to-slate-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <TrendingUp className="w-6 h-6 text-slate-600" />
+              </div>
+              <h4 className="font-semibold text-slate-900 text-sm mb-2">
+                Platform Demand
+              </h4>
+              <p className="text-xs text-slate-500 font-light">
+                Hunger for conversion
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center group">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Zap className="w-6 h-6 text-orange-500" />
+              </div>
+              <h4 className="font-semibold text-slate-900 text-sm mb-2">
+                User Fatigue
+              </h4>
+              <p className="text-xs text-slate-500 font-light">
+                Wanting clarity, not chaos
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom highlight */}
+          <div className="mt-12 bg-gradient-to-r from-orange-50 via-white to-orange-50 rounded-2xl p-6 border border-orange-100 text-center">
+            <p className="text-slate-600 font-light">
+              <span className="font-semibold text-slate-900">
+                Emotion, context, and human intent
+              </span>{" "}
+              are missing from every meal decision.
+              <span className="text-orange-500 font-medium">
+                {" "}
+                NOM fills this gap.
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50 relative">
         {/* Decorative elements */}
         <svg
           className="absolute top-10 left-10 w-24 h-24 text-orange-100"
@@ -259,7 +702,8 @@ export default function LandingPage() {
               </svg>
             </div>
             <p className="text-lg text-slate-500 font-light">
-              Three simple steps to your perfect meal
+              Three simple steps to your perfect meal, powered by a universal
+              meal intelligence engine.
             </p>
           </div>
 
@@ -295,8 +739,8 @@ export default function LandingPage() {
                 Intent Interpretation
               </h3>
               <p className="text-slate-500 font-light leading-relaxed">
-                AI analyzes mood, cravings, nutrition needs, and context to
-                curate meals that match your moment perfectly.
+                AI analyzes mood, cravings, nutrition needs, preferences and
+                context to curate meals that match your moment perfectly.
               </p>
             </div>
 
@@ -324,6 +768,13 @@ export default function LandingPage() {
               </p>
             </div>
           </div>
+
+          {/* Additional context */}
+          <p className="text-center mt-12 text-slate-500 font-light max-w-3xl mx-auto">
+            Under the hood, NOM operates as a lightweight intelligence plugin:
+            turning emotional, physical, and situational prompts into precise
+            meal recommendations inside existing delivery flows.
+          </p>
 
           <div className="text-center mt-16">
             <Link href="/how-it-works">
@@ -386,8 +837,10 @@ export default function LandingPage() {
                 <circle cx="10" cy="10" r="8" />
               </svg>
             </div>
-            <p className="text-lg text-slate-500 font-light">
-              Features that make meal planning effortless
+            <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">
+              The universal meal intelligence engine that transforms emotional,
+              physical, and situational prompts into personalised
+              meals—seamlessly routed into existing delivery platforms.
             </p>
           </div>
 
@@ -465,6 +918,114 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* B2B Platform Section */}
+      <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white relative">
+        <svg
+          className="absolute bottom-10 left-10 w-16 h-16 text-orange-100"
+          viewBox="0 0 80 80"
+        >
+          <rect
+            x="10"
+            y="10"
+            width="60"
+            height="60"
+            rx="12"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeDasharray="5 5"
+          />
+        </svg>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* Left: B2B Info */}
+            <div>
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-orange-100 rounded-2xl mb-6">
+                <Zap className="w-7 h-7 text-orange-500" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-6">
+                Built for Food Delivery Platforms
+              </h3>
+              <p className="text-slate-500 font-light leading-relaxed mb-6">
+                NOM is a B2B SaaS API that plugs directly into platforms like
+                Uber Eats, DoorDash, and Grab—powering personalised,
+                emotion-aware food recommendations.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
+                  </div>
+                  <span className="text-slate-600 font-light">
+                    Higher conversion through intent-based matching
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
+                  </div>
+                  <span className="text-slate-600 font-light">
+                    Increased basket size via contextual suggestions
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
+                  </div>
+                  <span className="text-slate-600 font-light">
+                    Better retention from "they get me" experiences
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
+                  </div>
+                  <span className="text-slate-600 font-light">
+                    A differentiated intelligence layer in a crowded space
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right: Category Creation */}
+            <div className="bg-white rounded-3xl p-8 border-2 border-slate-100 shadow-lg relative">
+              {/* Corner decoration */}
+              <svg
+                className="absolute -top-3 -right-3 w-8 h-8 text-orange-400"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M5,15 L15,5 M5,25 L25,5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-slate-100 rounded-2xl mb-6">
+                <Layers className="w-7 h-7 text-slate-600" />
+              </div>
+              <h3 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">
+                A New Category
+              </h3>
+              <p className="text-orange-500 font-medium text-sm mb-4">
+                Emotional + Intent-Based Meal Intelligence
+              </p>
+              <p className="text-slate-500 font-light leading-relaxed mb-4">
+                Delivery apps focus on logistics. Diet apps focus on macros. AI
+                chatbots can talk but aren't connected to real menus. NOM
+                bridges all four worlds.
+              </p>
+              <p className="text-slate-500 font-light leading-relaxed">
+                We combine emotion, intent, real-time menu intelligence, and
+                fulfilment to deliver the right meal for the right moment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -484,9 +1045,14 @@ export default function LandingPage() {
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
                 Eat With Intention
               </h2>
-              <p className="text-slate-300 text-lg mb-8 font-light max-w-xl mx-auto">
+              <p className="text-slate-300 text-lg mb-4 font-light max-w-xl mx-auto">
                 Not just what's available. Not just what's nearby. What your
                 mind, body, and soul truly need.
+              </p>
+              <p className="text-slate-400 text-sm mb-8 font-light max-w-2xl mx-auto">
+                Today, NOM launches its MVP with delivery partners. Soon, we'll
+                expand across fitness, health, and wellness ecosystems—on the
+                path to becoming the universal API for intentional eating.
               </p>
               <a href="/contact">
                 <Button

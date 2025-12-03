@@ -99,7 +99,9 @@ export default function FeaturesPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            A sophisticated plugin that interprets any prompt—emotional, physical, situational, dietary—and instantly delivers personalized meal recommendations.
+            A sophisticated plugin that interprets any prompt—emotional,
+            physical, situational, dietary—and instantly delivers personalized
+            meal recommendations.
           </p>
         </div>
       </section>
@@ -179,7 +181,9 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Understanding psychological states and translating them into nourishment. Match situational context with optimal meal choices.
+                  Understanding psychological states and translating them into
+                  nourishment. Match situational context with optimal meal
+                  choices.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -217,7 +221,8 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Best meals matched to the moment—uplifting food, grounding food, energizing options tailored to your body and mood.
+                  Best meals matched to the moment—uplifting food, grounding
+                  food, energizing options tailored to your body and mood.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -255,7 +260,9 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Connected to Uber Eats, Grab, DoorDash, and more. Plugin connects directly to delivery platforms for instant fulfillment.
+                  Connected to Uber Eats, Grab, DoorDash, and more. Plugin
+                  connects directly to delivery platforms for instant
+                  fulfillment.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -293,7 +300,8 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Conversational prompts that capture nuanced human needs. Say what you feel, and we understand what you need.
+                  Conversational prompts that capture nuanced human needs. Say
+                  what you feel, and we understand what you need.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -331,7 +339,8 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Deep learning that evolves with individual preferences, understanding your unique relationship with food over time.
+                  Deep learning that evolves with individual preferences,
+                  understanding your unique relationship with food over time.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -369,7 +378,9 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Higher conversion rates through intelligent matching, increased basket sizes, and improved user retention for partners.
+                  Higher conversion rates through intelligent matching,
+                  increased basket sizes, and improved user retention for
+                  partners.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -393,6 +404,90 @@ export default function FeaturesPage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Platform Benefits Section */}
+      <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white relative">
+        {/* Decorative elements */}
+        <svg
+          className="absolute top-10 left-10 w-20 h-20 text-orange-100"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeDasharray="8 6"
+          />
+        </svg>
+
+        <svg
+          className="absolute bottom-20 right-16 w-16 h-16 text-slate-200"
+          viewBox="0 0 80 80"
+        >
+          <rect
+            x="10"
+            y="10"
+            width="60"
+            height="60"
+            rx="12"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeDasharray="5 5"
+          />
+        </svg>
+
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight mb-4">
+              Built for Delivery Platforms
+            </h2>
+            <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">
+              NOM is a B2B SaaS API that powers personalised, emotion-aware food
+              recommendations for delivery platforms worldwide.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Benefit 1 */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
+              <div className="text-3xl font-bold text-orange-500 mb-2">
+                2.5x
+              </div>
+              <p className="text-slate-600 font-light text-sm">
+                Conversion lift through intent-based matching
+              </p>
+            </div>
+
+            {/* Benefit 2 */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
+              <div className="text-3xl font-bold text-slate-700 mb-2">40%</div>
+              <p className="text-slate-600 font-light text-sm">
+                Basket size growth via contextual suggestions
+              </p>
+            </div>
+
+            {/* Benefit 3 */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
+              <div className="text-3xl font-bold text-orange-500 mb-2">85%</div>
+              <p className="text-slate-600 font-light text-sm">
+                User retention from "they get me" experiences
+              </p>
+            </div>
+
+            {/* Benefit 4 */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
+              <div className="text-3xl font-bold text-slate-700 mb-2">∞</div>
+              <p className="text-slate-600 font-light text-sm">
+                Differentiated intelligence layer
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -485,7 +580,9 @@ export default function FeaturesPage() {
                   <div className="w-6 h-6 border-2 border-slate-300 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <X className="w-3 h-3 text-slate-400" />
                   </div>
-                  <span className="font-light">Shows only categories or restaurants</span>
+                  <span className="font-light">
+                    Shows only categories or restaurants
+                  </span>
                 </div>
               </div>
             </div>
