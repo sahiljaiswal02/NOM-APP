@@ -77,9 +77,9 @@ export default function FeaturesPage() {
           </Badge>
 
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900 tracking-tight">
-            Features That{" "}
+            The Universal{" "}
             <span className="relative inline-block">
-              <span className="text-orange-500">Transform</span>
+              <span className="text-orange-500">Meal Intelligence</span>
               {/* Underline doodle */}
               <svg
                 className="absolute -bottom-2 left-0 w-full h-3 text-orange-300"
@@ -95,12 +95,11 @@ export default function FeaturesPage() {
                 />
               </svg>
             </span>{" "}
-            Dining
+            Engine
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            Discover the advanced capabilities that make NOM the most
-            intelligent meal delivery platform ever created.
+            A sophisticated plugin that interprets any prompt—emotional, physical, situational, dietary—and instantly delivers personalized meal recommendations.
           </p>
         </div>
       </section>
@@ -175,33 +174,31 @@ export default function FeaturesPage() {
                   <Brain className="w-7 h-7 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Smart Meal Composition
+                  Emotional + Intent-Based Discovery
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  AI understands complex dietary requirements and creates
-                  balanced meals that meet your exact specifications with
-                  scientific precision.
+                  Understanding psychological states and translating them into nourishment. Match situational context with optimal meal choices.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Macro and micronutrient optimization</span>
+                    <span>Mood-based meal matching</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Dietary restriction compliance</span>
+                    <span>Situational context understanding</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Flavor profile balancing</span>
+                    <span>Energy and intuition alignment</span>
                   </div>
                 </div>
               </CardContent>
@@ -215,32 +212,31 @@ export default function FeaturesPage() {
                   <MapPin className="w-7 h-7 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Local Restaurant Network
+                  Curated Suggestions
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Access to 200+ local restaurants with real-time menu data,
-                  availability, and quality ratings for the freshest options.
+                  Best meals matched to the moment—uplifting food, grounding food, energizing options tailored to your body and mood.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Real-time menu updates</span>
+                    <span>Intelligent meal curation</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Quality and rating tracking</span>
+                    <span>Moment-specific recommendations</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Ingredient freshness monitoring</span>
+                    <span>Cuisine preference matching</span>
                   </div>
                 </div>
               </CardContent>
@@ -254,32 +250,31 @@ export default function FeaturesPage() {
                   <Clock className="w-7 h-7 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Synchronized Delivery
+                  Seamless Integration
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Coordinated pickup and delivery from multiple restaurants so
-                  your entire meal arrives hot, fresh, and perfectly timed.
+                  Connected to Uber Eats, Grab, DoorDash, and more. Plugin connects directly to delivery platforms for instant fulfillment.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Multi-restaurant coordination</span>
+                    <span>Multi-platform connectivity</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Temperature-controlled transport</span>
+                    <span>One-click ordering</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Precise timing algorithms</span>
+                    <span>Real-time availability</span>
                   </div>
                 </div>
               </CardContent>
@@ -293,32 +288,31 @@ export default function FeaturesPage() {
                   <Utensils className="w-7 h-7 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Nutritional Intelligence
+                  Natural Language Processing
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Precise calorie counting, macro tracking, and dietary
-                  restriction compliance built into every meal recommendation.
+                  Conversational prompts that capture nuanced human needs. Say what you feel, and we understand what you need.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Accurate nutritional analysis</span>
+                    <span>Context-aware interpretation</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Allergen detection & avoidance</span>
+                    <span>Emotional cue recognition</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Health goal alignment</span>
+                    <span>Dietary restriction parsing</span>
                   </div>
                 </div>
               </CardContent>
@@ -332,32 +326,31 @@ export default function FeaturesPage() {
                   <Star className="w-7 h-7 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Personalized Learning
+                  LLM Personalization
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  AI learns your preferences over time, making better
-                  recommendations and discovering new favorites you'll love.
+                  Deep learning that evolves with individual preferences, understanding your unique relationship with food over time.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Preference pattern recognition</span>
+                    <span>Individual preference learning</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Adaptive recommendation engine</span>
+                    <span>Adaptive taste profiling</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-orange-500" />
                     </div>
-                    <span>Surprise & discovery features</span>
+                    <span>Continuous improvement</span>
                   </div>
                 </div>
               </CardContent>
@@ -371,32 +364,31 @@ export default function FeaturesPage() {
                   <Shield className="w-7 h-7 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Quality Guarantee
+                  Platform Intelligence
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Every meal is quality-checked against your requirements with a
-                  satisfaction guarantee and easy reordering.
+                  Higher conversion rates through intelligent matching, increased basket sizes, and improved user retention for partners.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Pre-delivery quality checks</span>
+                    <span>2.5x conversion lift</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>100% satisfaction guarantee</span>
+                    <span>40% basket growth</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>Instant feedback & improvements</span>
+                    <span>85% retention rate</span>
                   </div>
                 </div>
               </CardContent>
@@ -456,7 +448,7 @@ export default function FeaturesPage() {
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-slate-400 text-center mb-8 mt-2">
-                Traditional Food Delivery
+                Traditional Delivery Apps
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center text-slate-400">
@@ -464,7 +456,7 @@ export default function FeaturesPage() {
                     <X className="w-3 h-3 text-slate-400" />
                   </div>
                   <span className="font-light">
-                    Browse endless menus manually
+                    Endless scrolling through categories
                   </span>
                 </div>
                 <div className="flex items-center text-slate-400">
@@ -472,7 +464,7 @@ export default function FeaturesPage() {
                     <X className="w-3 h-3 text-slate-400" />
                   </div>
                   <span className="font-light">
-                    Guess nutritional information
+                    Decision fatigue and reactive eating
                   </span>
                 </div>
                 <div className="flex items-center text-slate-400">
@@ -480,20 +472,20 @@ export default function FeaturesPage() {
                     <X className="w-3 h-3 text-slate-400" />
                   </div>
                   <span className="font-light">
-                    Order from single restaurant
+                    Ignores mood, energy, and intuition
                   </span>
                 </div>
                 <div className="flex items-center text-slate-400">
                   <div className="w-6 h-6 border-2 border-slate-300 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <X className="w-3 h-3 text-slate-400" />
                   </div>
-                  <span className="font-light">No dietary optimization</span>
+                  <span className="font-light">No emotional understanding</span>
                 </div>
                 <div className="flex items-center text-slate-400">
                   <div className="w-6 h-6 border-2 border-slate-300 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <X className="w-3 h-3 text-slate-400" />
                   </div>
-                  <span className="font-light">Generic recommendations</span>
+                  <span className="font-light">Shows only categories or restaurants</span>
                 </div>
               </div>
             </div>
@@ -521,38 +513,38 @@ export default function FeaturesPage() {
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 text-center mb-8 mt-2">
-                NOM AI Platform
+                NOM Intelligence Engine
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center text-slate-700">
                   <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span>AI creates perfect meals from prompts</span>
+                  <span>Intent-based meal discovery</span>
                 </div>
                 <div className="flex items-center text-slate-700">
                   <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span>Precise nutritional optimization</span>
+                  <span>Emotional & situational understanding</span>
                 </div>
                 <div className="flex items-center text-slate-700">
                   <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span>Multi-restaurant coordination</span>
+                  <span>Natural language prompts</span>
                 </div>
                 <div className="flex items-center text-slate-700">
                   <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span>Dietary restriction compliance</span>
+                  <span>Deep personalization with LLM</span>
                 </div>
                 <div className="flex items-center text-slate-700">
                   <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span>Personalized learning & adaptation</span>
+                  <span>Seamless platform integration</span>
                 </div>
               </div>
             </div>

@@ -86,9 +86,9 @@ export default function HowItWorksPage() {
           </Badge>
 
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900 tracking-tight">
-            How{" "}
+            The{" "}
             <span className="relative inline-block">
-              <span className="text-orange-500">NOM</span>
+              <span className="text-orange-500">Engine</span>
               {/* Underline doodle */}
               <svg
                 className="absolute -bottom-1 left-0 w-full h-2 text-orange-300"
@@ -108,8 +108,8 @@ export default function HowItWorksPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            Discover the advanced AI technology and seamless process that
-            transforms your cravings into perfectly crafted meals.
+            Four seamless steps that transform your emotional state and needs
+            into the perfect meal recommendation.
           </p>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function HowItWorksPage() {
               Simple Process
             </p>
             <h3 className="text-2xl font-semibold text-slate-900">
-              Three Steps to Your Perfect Meal
+              Four Steps to Your Perfect Meal
             </h3>
           </div>
 
@@ -145,7 +145,7 @@ export default function HowItWorksPage() {
               <div className="w-2 h-2 bg-orange-300 rounded-full animate-pulse delay-500"></div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
               {/* Step 1 */}
               <div className="flex flex-col items-center text-center group">
                 <div className="relative mb-6">
@@ -161,10 +161,10 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-slate-900 mb-2">
-                  Describe
+                  User Input
                 </h4>
-                <p className="text-sm text-slate-500 font-light max-w-[160px]">
-                  Tell us what you're craving in natural language
+                <p className="text-sm text-slate-500 font-light max-w-[140px]">
+                  Natural language prompt about your state or needs
                 </p>
               </div>
 
@@ -238,10 +238,10 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-slate-900 mb-2">
-                  AI Crafts
+                  Intent Interpretation
                 </h4>
-                <p className="text-sm text-slate-500 font-light max-w-[160px]">
-                  Our AI finds the perfect meal combination
+                <p className="text-sm text-slate-500 font-light max-w-[140px]">
+                  AI analyzes mood, needs, and context
                 </p>
               </div>
 
@@ -302,6 +302,64 @@ export default function HowItWorksPage() {
                   <div className="absolute -top-2 -right-2 w-6 h-6 bg-white border-2 border-orange-200 rounded-full flex items-center justify-center z-10">
                     <span className="text-xs font-bold text-orange-500">3</span>
                   </div>
+                  {/* Icon container */}
+                  <div className="relative w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center shadow-lg shadow-slate-200 group-hover:scale-110 transition-transform duration-300">
+                    <Utensils className="w-7 h-7 text-white" />
+                  </div>
+                </div>
+                <h4 className="text-lg font-semibold text-slate-900 mb-2">
+                  Intelligent Curation
+                </h4>
+                <p className="text-sm text-slate-500 font-light max-w-[140px]">
+                  Tailored meal list generated
+                </p>
+              </div>
+
+              {/* Arrow 3 - Mobile */}
+              <div className="flex md:hidden items-center justify-center">
+                <svg className="w-6 h-12 text-orange-300" viewBox="0 0 24 48">
+                  <path
+                    d="M12,0 L12,40 M6,34 L12,42 L18,34"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+
+              {/* Arrow 3 - Desktop */}
+              <div className="hidden md:flex items-center justify-center flex-1 max-w-[80px]">
+                <svg className="w-full h-8 text-slate-300" viewBox="0 0 100 32">
+                  <path
+                    d="M0,16 Q25,16 50,16 T85,16"
+                    fill="none"
+                    stroke="#cbd5e1"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeDasharray="6 4"
+                  />
+                  <path
+                    d="M80,10 L90,16 L80,22"
+                    fill="none"
+                    stroke="#cbd5e1"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex flex-col items-center text-center group">
+                <div className="relative mb-6">
+                  {/* Outer ring */}
+                  <div className="absolute -inset-3 bg-orange-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  {/* Step number badge */}
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-white border-2 border-orange-200 rounded-full flex items-center justify-center z-10">
+                    <span className="text-xs font-bold text-orange-500">4</span>
+                  </div>
                   {/* Sparkle decoration */}
                   <svg
                     className="absolute -top-4 -left-4 w-5 h-5 text-orange-300"
@@ -316,10 +374,10 @@ export default function HowItWorksPage() {
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-slate-900 mb-2">
-                  Delivered
+                  Seamless Ordering
                 </h4>
-                <p className="text-sm text-slate-500 font-light max-w-[160px]">
-                  Fresh meals arrive at your door perfectly timed
+                <p className="text-sm text-slate-500 font-light max-w-[140px]">
+                  Direct connection to delivery platforms
                 </p>
               </div>
             </div>
@@ -380,33 +438,33 @@ export default function HowItWorksPage() {
                       <MessageSquare className="w-7 h-7 text-white" />
                     </div>
                     <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      Describe Your Perfect Meal
+                      User Input
                     </h2>
                   </div>
                   <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    Start by telling our AI exactly what you're craving. Use
-                    natural language to describe your dietary needs,
-                    preferences, budget, or even your mood. Our AI understands
-                    context and nuance.
+                    Express how you feel or what you need in natural language.
+                    Say things like "I'm anxious—what should I eat?" or "I want
+                    something comforting but clean" or "I just finished a
+                    workout—suggest something nourishing."
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-orange-500" />
                       </div>
-                      <span>Natural language processing</span>
+                      <span>Emotional state recognition</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-orange-500" />
                       </div>
-                      <span>Dietary restriction recognition</span>
+                      <span>Physical needs understanding</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-orange-500" />
                       </div>
-                      <span>Mood and context understanding</span>
+                      <span>Situational context parsing</span>
                     </div>
                   </div>
                 </div>
@@ -436,19 +494,17 @@ export default function HowItWorksPage() {
                   <CardContent className="space-y-4 pt-6">
                     <div className="bg-orange-50 rounded-2xl p-4 border border-orange-100 hover:border-orange-200 transition-colors">
                       <p className="text-sm text-slate-700 leading-relaxed">
-                        "I want something healthy but comforting, under 1800
-                        calories, with lots of vegetables"
+                        "I'm anxious—what should I eat?"
                       </p>
                     </div>
                     <div className="bg-slate-50 rounded-2xl p-4 border border-slate-100 hover:border-slate-200 transition-colors">
                       <p className="text-sm text-slate-700 leading-relaxed">
-                        "Keto-friendly dinner for date night, budget around
-                        \$40"
+                        "Recommend something uplifting for a sad day"
                       </p>
                     </div>
                     <div className="bg-orange-50 rounded-2xl p-4 border border-orange-100 hover:border-orange-200 transition-colors">
                       <p className="text-sm text-slate-700 leading-relaxed">
-                        "Post-workout meal with high protein and complex carbs"
+                        "I want something light that won't crash my energy"
                       </p>
                     </div>
                   </CardContent>
@@ -469,32 +525,32 @@ export default function HowItWorksPage() {
                       <Brain className="w-7 h-7 text-white" />
                     </div>
                     <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      AI Analyzes & Creates
+                      Intent Interpretation
                     </h2>
                   </div>
                   <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    Our advanced AI processes your request by analyzing hundreds
-                    of local restaurant menus, nutritional databases, and your
-                    personal preferences to create the perfect meal combination.
+                    AI analyzes your mood, craving, nutrition needs, cuisine
+                    preferences, context, and dietary restrictions to understand
+                    what your body and mind truly need right now.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Real-time menu scanning</span>
+                      <span>Mood and emotional analysis</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Nutritional optimization</span>
+                      <span>Nutritional needs assessment</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Flavor profile matching</span>
+                      <span>Context and preference matching</span>
                     </div>
                   </div>
                 </div>
@@ -563,43 +619,140 @@ export default function HowItWorksPage() {
                 </div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-200">
-                      <Truck className="w-7 h-7 text-white" />
+                    <div className="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center shadow-lg shadow-slate-200">
+                      <Utensils className="w-7 h-7 text-white" />
                     </div>
                     <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      Coordinated Delivery
+                      Intelligent Curation
                     </h2>
                   </div>
                   <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    We coordinate with multiple restaurants to prepare your
-                    custom meal components and deliver everything together,
-                    perfectly timed and temperature-controlled for the best
-                    experience.
+                    AI analyzes millions of menu items, ingredients, and
+                    nutritional profiles to curate the perfect meal options
+                    tailored to your specific intent and preferences.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center text-slate-600">
-                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-orange-500" />
+                      <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Multi-restaurant coordination</span>
+                      <span>Advanced menu analysis and filtering</span>
                     </div>
                     <div className="flex items-center text-slate-600">
-                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-orange-500" />
+                      <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Temperature-controlled delivery</span>
+                      <span>Nutritional optimization algorithms</span>
                     </div>
                     <div className="flex items-center text-slate-600">
-                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-orange-500" />
+                      <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Real-time tracking</span>
+                      <span>Personalized ranking and curation</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="relative">
+                {/* Corner decorations */}
+                <svg
+                  className="absolute -bottom-4 -left-4 w-8 h-8 text-slate-300"
+                  viewBox="0 0 30 30"
+                >
+                  <circle
+                    cx="15"
+                    cy="15"
+                    r="10"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <circle cx="15" cy="15" r="4" fill="currentColor" />
+                </svg>
+
+                <Card className="bg-white border-2 border-slate-100 rounded-3xl shadow-xl shadow-slate-100/50 overflow-hidden">
+                  <CardHeader className="bg-gradient-to-r from-slate-50 to-white border-b border-slate-100">
+                    <CardTitle className="text-slate-900 flex items-center text-lg">
+                      <Search className="w-5 h-5 mr-3 text-slate-600" />
+                      Curation Process
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4 pt-6">
+                    <div className="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                      <span className="text-slate-700 font-medium">
+                        Menu Analysis
+                      </span>
+                      <div className="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
+                        <div className="w-full h-full bg-gradient-to-r from-slate-500 to-slate-600 rounded-full animate-pulse"></div>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                      <span className="text-slate-700 font-medium">
+                        Ingredient Matching
+                      </span>
+                      <div className="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
+                        <div className="w-4/5 h-full bg-gradient-to-r from-orange-400 to-orange-500 rounded-full animate-pulse"></div>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                      <span className="text-slate-700 font-medium">
+                        Personalized Ranking
+                      </span>
+                      <div className="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
+                        <div className="w-3/5 h-full bg-gradient-to-r from-slate-500 to-slate-600 rounded-full animate-pulse"></div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="relative md:order-2">
+                {/* Step number background */}
+                <div className="absolute -top-8 -left-4 text-[120px] font-bold text-slate-100 leading-none select-none">
+                  04
+                </div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-200">
+                      <Truck className="w-7 h-7 text-white" />
+                    </div>
+                    <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
+                      Seamless Ordering
+                    </h2>
+                  </div>
+                  <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
+                    Plugin connects directly to delivery platforms like Uber
+                    Eats, Grab, and DoorDash for instant fulfillment. One click
+                    and your perfect meal is on its way.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="flex items-center text-slate-600">
+                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-orange-500" />
+                      </div>
+                      <span>Direct platform integration</span>
+                    </div>
+                    <div className="flex items-center text-slate-600">
+                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-orange-500" />
+                      </div>
+                      <span>One-click ordering</span>
+                    </div>
+                    <div className="flex items-center text-slate-600">
+                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-orange-500" />
+                      </div>
+                      <span>Real-time delivery tracking</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative md:order-1">
                 {/* Corner decorations */}
                 <svg
                   className="absolute -top-4 -right-4 w-6 h-6 text-orange-300"

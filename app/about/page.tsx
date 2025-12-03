@@ -82,9 +82,9 @@ export default function AboutPage() {
           </Badge>
 
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900 tracking-tight">
-            Revolutionizing{" "}
+            The{" "}
             <span className="relative inline-block">
-              <span className="text-orange-500">Food Delivery</span>
+              <span className="text-orange-500">Intelligence Layer</span>
               {/* Underline doodle */}
               <svg
                 className="absolute -bottom-2 left-0 w-full h-3 text-orange-300"
@@ -100,13 +100,11 @@ export default function AboutPage() {
                 />
               </svg>
             </span>{" "}
-            with AI
+            for Humanity
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            We believe everyone deserves to eat exactly what they want, when
-            they want it. That's why we created NOM - the world's first
-            AI-powered meal creation and delivery platform.
+            Not just what is available. Not just what's nearby. What your mind, body, and soul truly need. We're building the universal API for intentional eating.
           </p>
         </div>
       </section>
@@ -139,34 +137,29 @@ export default function AboutPage() {
                 </h2>
               </div>
               <p className="text-lg text-slate-500 mb-6 font-light leading-relaxed">
-                To democratize access to perfect nutrition by making
-                personalized, restaurant-quality meals available to everyone,
-                regardless of their dietary needs, preferences, or cooking
-                skills.
+                To help humanity eat with intention by understanding what your mind, body, and soul truly need—not just what's available or nearby.
               </p>
               <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                We're not just delivering food - we're delivering health,
-                convenience, and joy through the power of artificial
-                intelligence.
+                We're occupying an entirely new category: Emotional + Intent-Based Meal Intelligence. No one does this—understanding psychological states and translating them into nourishment.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center text-slate-600">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
-                  <span>Personalized nutrition for everyone</span>
+                  <span>Emotional + Intent-Based Meal Intelligence</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
-                  <span>AI-powered meal optimization</span>
+                  <span>£500 billion+ untapped market opportunity</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
-                  <span>Supporting local restaurant communities</span>
+                  <span>Blue ocean strategy in crowded food delivery space</span>
                 </div>
               </div>
             </div>
@@ -205,10 +198,7 @@ export default function AboutPage() {
                       The Idea
                     </h3>
                     <p className="text-slate-500 font-light leading-relaxed">
-                      "What if we could describe our perfect meal in plain
-                      English and have AI create it from the best local
-                      restaurants?" This simple question sparked the creation of
-                      NOM in 2026.
+                      "What if food understood your mind, body, and moments?" This question sparked the creation of NOM—the world's first intent-based meal recommendation engine.
                     </p>
                   </div>
                 </CardContent>
@@ -276,14 +266,12 @@ export default function AboutPage() {
                   <Brain className="w-8 h-8 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Innovation First
+                  Perfect Timing
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  We push the boundaries of what's possible with AI and
-                  technology to create experiences that seemed impossible just
-                  years ago.
+                  Five converging forces: AI breakthroughs, massive market, wellness demand, agency shift, and platform hunger—all aligning perfectly for our launch.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -295,13 +283,12 @@ export default function AboutPage() {
                   <Users className="w-8 h-8 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Community Focused
+                  B2B SaaS API Model
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  We believe in supporting local restaurants and building
-                  stronger food communities while serving our customers better.
+                  Our business model revolves around licensing our powerful B2B SaaS API to major food delivery platforms, enabling them to enhance profitability through intelligent matching.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -313,13 +300,12 @@ export default function AboutPage() {
                   <Heart className="w-8 h-8 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Health & Wellness
+                  Massive Market Opportunity
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Every meal we create is optimized not just for taste, but for
-                  your health, dietary needs, and wellness goals.
+                  Food delivery is a $500B+ global market with zero innovation in discovery mechanisms. We're the first to address contextual, emotional food discovery.
                 </CardDescription>
               </CardContent>
             </Card>

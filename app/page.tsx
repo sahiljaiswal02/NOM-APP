@@ -101,9 +101,9 @@ export default function LandingPage() {
           </Badge>
 
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900 tracking-tight">
-            Your Perfect Meal,{" "}
+            Food That Understands Your{" "}
             <span className="relative inline-block">
-              <span className="text-orange-500">One Prompt Away</span>
+              <span className="text-orange-500">Mind, Body & Moments</span>
               {/* Underline doodle */}
               <svg
                 className="absolute -bottom-2 left-0 w-full h-3 text-orange-300"
@@ -122,8 +122,9 @@ export default function LandingPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
-            Describe what you want to eat, and our AI crafts the perfect meal
-            from local restaurant menus—delivered to your door in harmony.
+            The world's first intent-based meal recommendation engine. Tell us
+            how you feel, what you need, or what moment you're in—and we'll
+            deliver the perfect meal.
           </p>
 
           {/* Interactive Example */}
@@ -169,15 +170,14 @@ export default function LandingPage() {
               <p className="text-slate-400 text-sm mb-3">Example prompt:</p>
               <div className="bg-white rounded-2xl p-4 mb-4 border border-slate-200 shadow-sm">
                 <p className="text-base font-mono text-slate-700">
-                  "Alkaline meal under 2k calories with lean protein and
-                  Mediterranean flavors"
+                  "I'm anxious—what should I eat?"
                 </p>
               </div>
               <div className="flex items-center text-orange-600 bg-orange-50 rounded-2xl p-4 border border-orange-100">
                 <CheckCircle className="w-5 h-5 mr-3 flex-shrink-0" />
                 <span className="text-sm font-medium">
-                  Analyzing 200+ restaurants • Match found • Delivery
-                  coordinated
+                  Understanding your state • Finding calming foods • Delivery
+                  ready
                 </span>
               </div>
             </div>
@@ -189,7 +189,7 @@ export default function LandingPage() {
               className="bg-slate-900 text-white hover:bg-slate-800 text-base px-8 py-6 rounded-full font-medium group"
             >
               Coming Soon
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              {/* <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" /> */}
             </Button>
             <Button
               size="lg"
@@ -274,11 +274,11 @@ export default function LandingPage() {
                 <div className="absolute -top-2 -right-2 w-4 h-4 bg-slate-800 rounded-full border-4 border-white"></div>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                Describe Your Craving
+                Express Your Intent
               </h3>
               <p className="text-slate-500 font-light leading-relaxed">
-                Tell our AI exactly what you want using natural language—dietary
-                needs, calories, cuisine, mood, anything.
+                Share your emotional state, physical needs, or situational
+                context—our AI understands what your body and mind truly need.
               </p>
             </div>
 
@@ -292,11 +292,11 @@ export default function LandingPage() {
                 <div className="absolute -inset-3 border-2 border-dashed border-slate-200 rounded-3xl"></div>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                AI Crafts Your Meal
+                Intent Interpretation
               </h3>
               <p className="text-slate-500 font-light leading-relaxed">
-                Our AI analyzes hundreds of local menus and nutritional data to
-                create your perfect meal combination.
+                AI analyzes mood, cravings, nutrition needs, and context to
+                curate meals that match your moment perfectly.
               </p>
             </div>
 
@@ -316,11 +316,11 @@ export default function LandingPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                Perfectly Delivered
+                Seamless Fulfillment
               </h3>
               <p className="text-slate-500 font-light leading-relaxed">
-                We coordinate with restaurants to prepare and deliver everything
-                together, perfectly timed.
+                Connected directly to delivery platforms like Uber Eats and
+                DoorDash for instant ordering and delivery.
               </p>
             </div>
           </div>
@@ -398,13 +398,13 @@ export default function LandingPage() {
                   <Brain className="w-7 h-7 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Smart Meal Composition
+                  Emotional Intelligence
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base">
-                  AI understands complex dietary requirements and creates
-                  balanced meals that meet your exact specifications.
+                  AI interprets emotional states and translates them into
+                  nourishment—understanding what you need beyond just calories.
                 </CardDescription>
               </CardContent>
               {/* Decorative corner */}
@@ -417,13 +417,14 @@ export default function LandingPage() {
                   <MapPin className="w-7 h-7 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Local Restaurant Network
+                  Natural Language Understanding
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base">
-                  Access to 200+ local restaurants with real-time menu data,
-                  availability, and quality ratings.
+                  Conversational prompts that capture nuanced human needs—from
+                  "I'm tired and bloated" to "something uplifting for a sad
+                  day."
                 </CardDescription>
               </CardContent>
               {/* Decorative corner */}
@@ -436,13 +437,13 @@ export default function LandingPage() {
                   <Clock className="w-7 h-7 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Synchronized Delivery
+                  Deep Personalization
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base">
-                  Coordinated pickup and delivery from multiple restaurants so
-                  everything arrives fresh.
+                  LLM-powered learning that evolves with your preferences, body,
+                  mood, and goals for increasingly perfect recommendations.
                 </CardDescription>
               </CardContent>
               {/* Decorative corner */}
@@ -481,11 +482,11 @@ export default function LandingPage() {
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
-                Ready to Transform Your Meals?
+                Eat With Intention
               </h2>
               <p className="text-slate-300 text-lg mb-8 font-light max-w-xl mx-auto">
-                Join thousands of food lovers who've discovered the perfect way
-                to eat.
+                Not just what's available. Not just what's nearby. What your
+                mind, body, and soul truly need.
               </p>
               <a href="/contact">
                 <Button
@@ -527,7 +528,7 @@ export default function LandingPage() {
                 <img src="/logo.png" className="w-20 h-12 bg-cover" alt="NOM" />
               </Link>
               <p className="text-slate-500 mb-6 font-light leading-relaxed">
-                AI-powered meal creation and delivery for the modern lifestyle.
+                The intelligence layer that helps humanity eat with intention.
               </p>
               <Link
                 href="https://www.linkedin.com/company/nom-app/?viewAsMember=true"
