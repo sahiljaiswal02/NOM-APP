@@ -23,6 +23,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -152,8 +153,8 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            NOM is currently raising its pre-seed round. Reach out to us for
-            investment opportunities or any questions you might have.
+            Have a question about NOM? Want to join our waitlist or share
+            feedback? We'd love to hear from you.
           </p>
         </div>
       </section>
@@ -296,7 +297,7 @@ export default function ContactPage() {
                             handleInputChange("message", e.target.value)
                           }
                           className="bg-slate-50 border-2 border-slate-200 text-slate-800 rounded-xl min-h-[150px] focus:border-orange-400 focus:ring-orange-400 transition-colors resize-none"
-                          placeholder="Tell us about your inquiry, investment interest, or any questions..."
+                          placeholder="Tell us about your question, what features you'd love to see, or just say hi..."
                           required
                         />
                       </div>
@@ -371,7 +372,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              {/* Investment Card */}
+              {/* Join Waitlist Card */}
               <Card className="bg-gradient-to-br from-slate-900 to-slate-800 border-0 rounded-3xl overflow-hidden relative">
                 {/* Background decorations */}
                 <div className="absolute top-0 left-0 w-full h-full opacity-10">
@@ -389,18 +390,18 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-1">
-                        Investment Opportunities
+                        Join the Waitlist
                       </h3>
                       <p className="text-slate-400 font-light text-sm mb-4">
-                        We're currently raising our pre-seed round. Interested
-                        in being part of the future of food delivery?
+                        Be among the first to experience AI-powered meal
+                        recommendations. Get early access when we launch!
                       </p>
-                      <Link href="mailto:nomapp@proton.me?subject=Investment%20Inquiry">
+                      <Link href="mailto:nomapp@proton.me?subject=Waitlist%20Request">
                         <Button
                           size="sm"
                           className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-5 py-2 font-medium group"
                         >
-                          Learn More
+                          Get Early Access
                           <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Button>
                       </Link>
@@ -458,32 +459,32 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-md transition-all duration-300">
               <h3 className="font-semibold text-slate-900 mb-2">
-                How can I invest in NOM?
+                When can I use NOM?
               </h3>
               <p className="text-slate-500 font-light text-sm leading-relaxed">
-                We're currently raising our pre-seed round. Send us an email
-                with your interest and we'll share our pitch deck and investment
-                details.
+                We're launching soon! Join our waitlist to be the first to
+                know and get exclusive early access when we go live in your area.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-md transition-all duration-300">
               <h3 className="font-semibold text-slate-900 mb-2">
-                When will NOM launch?
+                Is NOM free to use?
               </h3>
               <p className="text-slate-500 font-light text-sm leading-relaxed">
-                We're targeting a 2026 launch. Sign up for updates to be the
-                first to know when we go live in your area.
+                NOM will be free at launch! Our AI-powered recommendations
+                cost nothing—you only pay for the meals you order through
+                delivery platforms.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-md transition-all duration-300">
               <h3 className="font-semibold text-slate-900 mb-2">
-                Can restaurants partner with NOM?
+                What delivery apps does NOM work with?
               </h3>
               <p className="text-slate-500 font-light text-sm leading-relaxed">
-                Absolutely! We're building our restaurant network. Reach out to
-                discuss partnership opportunities.
+                We're integrating with Uber Eats, DoorDash, Grab and more.
+                You'll order through the platforms you already know and love.
               </p>
             </div>
 
@@ -501,129 +502,8 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-50 border-t border-slate-200 py-16 px-4 relative">
-        <svg
-          className="absolute top-8 right-20 w-12 h-12 text-orange-200 opacity-50"
-          viewBox="0 0 50 50"
-        >
-          <circle
-            cx="25"
-            cy="25"
-            r="20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeDasharray="4 4"
-          />
-        </svg>
-
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12">
-            <div className="flex-1">
-              <Link href="/" className="inline-block mb-6">
-                <img src="/logo.png" className="w-20 h-12 bg-cover" alt="NOM" />
-              </Link>
-              <p className="text-slate-500 mb-6 font-light leading-relaxed">
-                AI-powered meal creation and delivery for the modern lifestyle.
-              </p>
-              <Link
-                href="https://www.linkedin.com/company/nom-app/?viewAsMember=true"
-                target="_blank"
-                className="inline-block"
-              >
-                <div className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center hover:border-orange-300 hover:bg-orange-50 transition-all">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="text-slate-600"
-                  >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
-                </div>
-              </Link>
-            </div>
-
-            <div className="flex-1">
-              <h3 className="font-semibold mb-6 text-slate-900">Product</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li>
-                  <Link
-                    href="/how-it-works"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    How it Works
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/features"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex-1">
-              <h3 className="font-semibold mb-6 text-slate-900">Company</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li>
-                  <Link
-                    href="/privacy"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/terms"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-slate-500 font-light text-sm">
-              © 2026 NomApp. All rights reserved.
-            </p>
-            <p className="text-slate-500 font-light text-sm">
-              Currently raising pre-seed.{" "}
-              <Link
-                href="/contact"
-                className="text-orange-500 hover:text-orange-600 transition-colors font-medium"
-              >
-                Reach out
-              </Link>{" "}
-              for investment opportunities.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
+

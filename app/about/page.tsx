@@ -18,6 +18,7 @@ import {
   Check,
 } from "lucide-react";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -82,9 +83,9 @@ export default function AboutPage() {
           </Badge>
 
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900 tracking-tight">
-            The{" "}
+            We Help You{" "}
             <span className="relative inline-block">
-              <span className="text-orange-500">Intelligence Layer</span>
+              <span className="text-orange-500">Eat Better</span>
               {/* Underline doodle */}
               <svg
                 className="absolute -bottom-2 left-0 w-full h-3 text-orange-300"
@@ -100,13 +101,13 @@ export default function AboutPage() {
                 />
               </svg>
             </span>{" "}
-            for Humanity
+            Every Day
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            Not just what is available. Not just what's nearby. What your mind,
-            body, and soul truly need. We're building the universal API for
-            intentional eating.
+            Not just what's available. Not just what's nearby. What your mind,
+            body, and soul truly need. We're on a mission to make healthy,
+            intentional eating effortless for everyone.
           </p>
         </div>
       </section>
@@ -144,29 +145,29 @@ export default function AboutPage() {
                 nearby.
               </p>
               <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                We're occupying an entirely new category: Emotional +
-                Intent-Based Meal Intelligence. No one does this—understanding
-                psychological states and translating them into nourishment.
+                We're pioneering Emotional + Intent-Based Meal Intelligence.
+                No other app does this—understanding how you feel and
+                translating that into the perfect meal for you.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center text-slate-600">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
-                  <span>Emotional + Intent-Based Meal Intelligence</span>
+                  <span>Understands your mood, energy & cravings</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
-                  <span>£500 billion+ untapped market opportunity</span>
+                  <span>Recommends meals tailored to your unique needs</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Check className="w-3.5 h-3.5 text-orange-500" />
                   </div>
                   <span>
-                    Blue ocean strategy in crowded food delivery space
+                    Eliminates decision fatigue so you can focus on living
                   </span>
                 </div>
               </div>
@@ -276,14 +277,14 @@ export default function AboutPage() {
                   <Brain className="w-8 h-8 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Perfect Timing
+                  Your Wellbeing First
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Five converging forces: AI breakthroughs, massive market,
-                  wellness demand, agency shift, and platform hunger—all
-                  aligning perfectly for our launch.
+                  We believe food is more than fuel. Every recommendation
+                  considers your emotional state, physical needs, and personal
+                  goals to support your overall wellbeing.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -295,14 +296,14 @@ export default function AboutPage() {
                   <Users className="w-8 h-8 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  B2B SaaS API Model
+                  Built Around You
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Our business model revolves around licensing our powerful B2B
-                  SaaS API to major food delivery platforms, enabling them to
-                  enhance profitability through intelligent matching.
+                  NOM learns your preferences, dietary needs and habits over
+                  time. The more you use it, the better it understands you—like
+                  a personal food concierge in your pocket.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -314,14 +315,14 @@ export default function AboutPage() {
                   <Heart className="w-8 h-8 text-orange-500" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Massive Market Opportunity
+                  Joy in Every Meal
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
-                  Food delivery is a $500B+ global market with zero innovation
-                  in discovery mechanisms. We're the first to address
-                  contextual, emotional food discovery.
+                  Eating should bring joy, not stress. We're eliminating
+                  decision fatigue and replacing it with delight—helping you
+                  discover meals you never knew you needed.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -595,129 +596,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-50 border-t border-slate-200 py-16 px-4 relative">
-        <svg
-          className="absolute top-8 right-20 w-12 h-12 text-orange-200 opacity-50"
-          viewBox="0 0 50 50"
-        >
-          <circle
-            cx="25"
-            cy="25"
-            r="20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeDasharray="4 4"
-          />
-        </svg>
-
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12">
-            <div className="flex-1">
-              <Link href="/" className="inline-block mb-6">
-                <img src="/logo.png" className="w-20 h-12 bg-cover" alt="NOM" />
-              </Link>
-              <p className="text-slate-500 mb-6 font-light leading-relaxed">
-                AI-powered meal creation and delivery for the modern lifestyle.
-              </p>
-              <Link
-                href="https://www.linkedin.com/company/nom-app/?viewAsMember=true"
-                target="_blank"
-                className="inline-block"
-              >
-                <div className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center hover:border-orange-300 hover:bg-orange-50 transition-all">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="text-slate-600"
-                  >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
-                </div>
-              </Link>
-            </div>
-
-            <div className="flex-1">
-              <h3 className="font-semibold mb-6 text-slate-900">Product</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li>
-                  <Link
-                    href="/how-it-works"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    How it Works
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/features"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex-1">
-              <h3 className="font-semibold mb-6 text-slate-900">Company</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li>
-                  <Link
-                    href="/privacy"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/terms"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-slate-500 font-light text-sm">
-              © 2026 NomApp. All rights reserved.
-            </p>
-            <p className="text-slate-500 font-light text-sm">
-              Currently raising pre-seed.{" "}
-              <Link
-                href="/contact"
-                className="text-orange-500 hover:text-orange-600 transition-colors font-medium"
-              >
-                Reach out
-              </Link>{" "}
-              for investment opportunities.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

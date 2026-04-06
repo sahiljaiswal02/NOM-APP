@@ -21,6 +21,7 @@ import {
   X,
 } from "lucide-react";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import Link from "next/link";
 
 export default function FeaturesPage() {
@@ -373,33 +374,32 @@ export default function FeaturesPage() {
                   <Shield className="w-7 h-7 text-slate-600" />
                 </div>
                 <CardTitle className="text-slate-900 font-semibold text-xl">
-                  Platform Intelligence
+                  Privacy & Trust
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Higher conversion rates through intelligent matching,
-                  increased basket sizes, and improved user retention for
-                  partners.
+                  Your data stays yours. We use your preferences only to
+                  improve recommendations—never sold, never shared.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>2.5x conversion lift</span>
+                    <span>End-to-end encryption</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>40% basket growth</span>
+                    <span>No data selling, ever</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-sm">
                     <div className="w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                       <Check className="w-3 h-3 text-slate-600" />
                     </div>
-                    <span>85% retention rate</span>
+                    <span>Full transparency & control</span>
                   </div>
                 </div>
               </CardContent>
@@ -408,7 +408,7 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      {/* Platform Benefits Section */}
+      {/* User Benefits Section */}
       <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white relative">
         {/* Decorative elements */}
         <svg
@@ -446,46 +446,42 @@ export default function FeaturesPage() {
         <div className="container mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight mb-4">
-              Built for Delivery Platforms
+              Why Users Love NOM
             </h2>
             <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">
-              NOM is a B2B SaaS API that powers personalised, emotion-aware food
-              recommendations for delivery platforms worldwide.
+              Real benefits that make every meal decision effortless and every
+              bite more satisfying.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Benefit 1 */}
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
               <div className="text-3xl font-bold text-orange-500 mb-2">
-                2.5x
+                30s
               </div>
               <p className="text-slate-600 font-light text-sm">
-                Conversion lift through intent-based matching
+                From opening the app to finding your perfect meal
               </p>
             </div>
 
-            {/* Benefit 2 */}
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
-              <div className="text-3xl font-bold text-slate-700 mb-2">40%</div>
+              <div className="text-3xl font-bold text-slate-700 mb-2">Zero</div>
               <p className="text-slate-600 font-light text-sm">
-                Basket size growth via contextual suggestions
+                Decision fatigue—NOM handles the thinking for you
               </p>
             </div>
 
-            {/* Benefit 3 */}
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
-              <div className="text-3xl font-bold text-orange-500 mb-2">85%</div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">100%</div>
               <p className="text-slate-600 font-light text-sm">
-                User retention from "they get me" experiences
+                Personalised to your mood, body, and lifestyle
               </p>
             </div>
 
-            {/* Benefit 4 */}
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
               <div className="text-3xl font-bold text-slate-700 mb-2">∞</div>
               <p className="text-slate-600 font-light text-sm">
-                Differentiated intelligence layer
+                New discoveries—meals you never knew you needed
               </p>
             </div>
           </div>
@@ -699,129 +695,7 @@ export default function FeaturesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-50 border-t border-slate-200 py-16 px-4 relative">
-        <svg
-          className="absolute top-8 right-20 w-12 h-12 text-orange-200 opacity-50"
-          viewBox="0 0 50 50"
-        >
-          <circle
-            cx="25"
-            cy="25"
-            r="20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeDasharray="4 4"
-          />
-        </svg>
-
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12">
-            <div className="flex-1">
-              <Link href="/" className="inline-block mb-6">
-                <img src="/logo.png" className="w-20 h-12 bg-cover" alt="NOM" />
-              </Link>
-              <p className="text-slate-500 mb-6 font-light leading-relaxed">
-                AI-powered meal creation and delivery for the modern lifestyle.
-              </p>
-              <Link
-                href="https://www.linkedin.com/company/nom-app/?viewAsMember=true"
-                target="_blank"
-                className="inline-block"
-              >
-                <div className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center hover:border-orange-300 hover:bg-orange-50 transition-all">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="text-slate-600"
-                  >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
-                </div>
-              </Link>
-            </div>
-
-            <div className="flex-1">
-              <h3 className="font-semibold mb-6 text-slate-900">Product</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li>
-                  <Link
-                    href="/how-it-works"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    How it Works
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/features"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex-1">
-              <h3 className="font-semibold mb-6 text-slate-900">Company</h3>
-              <ul className="space-y-3 text-slate-500">
-                <li>
-                  <Link
-                    href="/privacy"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/terms"
-                    className="hover:text-orange-500 transition-colors font-light"
-                  >
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-slate-500 font-light text-sm">
-              © 2026 NomApp. All rights reserved.
-            </p>
-            <p className="text-slate-500 font-light text-sm">
-              Currently raising pre-seed.{" "}
-              <Link
-                href="/contact"
-                className="text-orange-500 hover:text-orange-600 transition-colors font-medium"
-              >
-                Reach out
-              </Link>{" "}
-              for investment opportunities.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
