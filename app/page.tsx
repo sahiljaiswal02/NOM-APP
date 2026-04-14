@@ -73,9 +73,9 @@ export default function LandingPage() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto font-sans font-light animate-fade-in-up delay-200">
-            The world's first intent-based meal recommendation engine. Tell us
-            how you feel, what you need, or what moment you're in—and we'll
-            deliver the perfect meal.
+            The world's first intent-based meal recommendation engine. Integrate
+            NOM's intent-based meal recommendation engine to transform customer
+            experience.
           </p>
 
           {/* CTA Buttons */}
@@ -114,7 +114,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="bg-[#1c1c1c] rounded-2xl shadow-[0_25px_60px_-12px_rgba(0,0,0,0.35)] border border-slate-700/30 relative overflow-hidden">
+            <div className="bg-[#1c1c1c] rounded-2xl border border-slate-700/30 relative overflow-hidden">
               {/* Browser Header Bar */}
               <div className="bg-[#2a2a2a] px-4 py-3 rounded-t-2xl flex items-center relative gap-2 border-b border-white/5">
                 <div className="flex gap-1.5">
@@ -129,12 +129,30 @@ export default function LandingPage() {
                   </span>
                 </div>
                 <div className="ml-auto flex gap-3 text-zinc-500">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
                     <polyline points="16 6 12 2 8 6" />
                     <line x1="12" y1="2" x2="12" y2="15" />
                   </svg>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
                     <line x1="12" y1="8" x2="12" y2="16" />
                     <line x1="8" y1="12" x2="16" y2="12" />
@@ -181,8 +199,171 @@ export default function LandingPage() {
           />
         </svg>
 
+        {/* How It Works */}
+        <section className="pb-32 px-4 relative overflow-hidden">
+          {/* Divider */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200/60 to-transparent" />
+          {/* Subtle Flow Indicators (Desktop Only) */}
+          <div className="hidden lg:block absolute top-[60%] left-0 w-full -translate-y-1/2 z-0 opacity-[0.03]">
+            <div className="flex justify-around items-center px-48">
+              <ArrowRight className="w-24 h-24 text-slate-900" />
+              <ArrowRight className="w-24 h-24 text-slate-900" />
+            </div>
+          </div>
+
+          <div className="container mx-auto max-w-6xl relative z-10">
+            <div className="text-center mb-24 max-w-3xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6 text-slate-900 tracking-tight">
+                How NOM Works
+              </h2>
+              <p className="text-lg text-slate-600 font-light leading-relaxed max-w-xl mx-auto">
+                Food is more than fuel. It's an emotional response. NOM's AI
+                understands mood and orchestrates the perfect meal.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+              {/* Step 1: Express Intent */}
+              <div className="group">
+                <div className="bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 h-full flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-2 border border-slate-200/60">
+                  <div className="mb-8 relative">
+                    <span className="text-orange-500 font-serif italic text-6xl opacity-10 select-none block">
+                      01
+                    </span>
+                    <h3 className="text-xl font-bold -mt-8 relative text-slate-900 z-10">
+                      Express Intent
+                    </h3>
+                  </div>
+                  <div className="bg-slate-50/80 rounded-2xl p-6 mb-8 flex-grow space-y-4 shadow-inner border border-slate-100">
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 font-bold text-xs">
+                        U
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                        User
+                      </span>
+                    </div>
+                    <div className="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm border border-slate-100 text-slate-700 text-sm font-medium">
+                      "I'm stressed and need comfort food."
+                      <span className="block text-[10px] text-orange-500 mt-2 font-bold animate-pulse">
+                        Typing...
+                      </span>
+                    </div>
+                    <div className="flex gap-2 mt-4">
+                      <div className="bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
+                        <Zap className="w-3.5 h-3.5 text-orange-500" /> Stressed
+                      </div>
+                      <div className="bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
+                        <CheckCircle className="w-3.5 h-3.5 text-orange-500" />{" "}
+                        Comfort
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">
+                    Our AI recognizes emotional triggers to filter for what
+                    customers need.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2: AI Interpretation */}
+              <div className="group">
+                <div className="bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 h-full flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-2 border border-slate-200/60">
+                  <div className="mb-8 relative">
+                    <span className="text-orange-500 font-serif italic text-6xl opacity-10 select-none block">
+                      02
+                    </span>
+                    <h3 className="text-xl font-bold -mt-8 relative text-slate-900 z-10">
+                      AI Interpretation
+                    </h3>
+                  </div>
+                  <div className="bg-slate-900 text-slate-100 rounded-2xl p-6 mb-8 flex-grow space-y-6 shadow-xl relative overflow-hidden">
+                    {/* Subtle inner glow */}
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 blur-3xl rounded-full"></div>
+
+                    <div className="flex justify-between items-center relative z-10">
+                      <div className="flex items-center gap-2">
+                        <Brain className="w-4 h-4 text-orange-400" />
+                        <span className="text-[10px] font-bold uppercase tracking-widest opacity-80">
+                          NOM Brain
+                        </span>
+                      </div>
+                      <span className="text-[9px] bg-orange-500/20 text-orange-400 px-2.5 py-1 rounded-full font-bold tracking-wider">
+                        CURATING
+                      </span>
+                    </div>
+                    <div className="space-y-4 relative z-10">
+                      <div>
+                        <div className="flex justify-between text-xs mb-1.5">
+                          <span className="text-slate-400">Protein Match</span>
+                          <span className="text-orange-200 font-medium tracking-wide">
+                            High
+                          </span>
+                        </div>
+                        <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                          <div className="bg-orange-500 h-full w-[75%] rounded-full shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="flex justify-between text-xs pt-1">
+                          <span className="text-slate-400">
+                            Tryptophan & Omega-3
+                          </span>
+                          <span className="text-orange-200 font-medium tracking-wide">
+                            Mood Boost
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">
+                    Our proprietary algorithm translates cravings into
+                    nutritional data, matching bio-rhythm with the city's top
+                    kitchens.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3: Seamless Delivery */}
+              <div className="group">
+                <div className="bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 h-full flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-2 border border-slate-200/60">
+                  <div className="mb-8 relative">
+                    <span className="text-orange-500 font-serif italic text-6xl opacity-10 select-none block">
+                      03
+                    </span>
+                    <h3 className="text-xl font-bold -mt-8 relative text-slate-900 z-10">
+                      SMART RECOMMENDATION
+                    </h3>
+                  </div>
+                  <div className="bg-white rounded-2xl p-6 mb-8 flex-grow border border-slate-100 shadow-sm flex flex-col justify-center items-center gap-6">
+                    <div className="w-20 h-20 rounded-full bg-orange-50/50 flex items-center justify-center p-2 border-2 border-orange-100/50">
+                      <div className="w-full h-full rounded-full bg-orange-100/50 flex items-center justify-center text-2xl shadow-inner">
+                        🍜
+                      </div>
+                    </div>
+                    <div className="border-t bg-slate-900 text-slate-100 rounded-2xl p-6 flex-grow shadow-xl border-slate-800 pt-4 mt-2 relative z-10">
+                      <span className="text-[9px] text-slate-500 block tracking-widest font-bold">
+                        SMART RECOMMENDATION
+                      </span>
+                      <div className="text-sm font-semibold text-white mb-1">
+                        Miso Ramen with Extra Pork
+                      </div>
+                      <div className="text-[11px] text-slate-400 italic">
+                        "Rich broth triggers serotonin release."
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">
+                    Users receive a meal recommendation perfect for them.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Food Discovery  */}
         <div className="container mx-auto max-w-6xl relative z-10">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl mb-6">
               <Target className="w-7 h-7 text-orange-500" />
@@ -191,7 +372,7 @@ export default function LandingPage() {
               Food Discovery Is Fundamentally Broken
             </h2>
             <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">
-              The way we choose what to eat is stuck in the past—endless
+              The way users choose what to eat is stuck in the past—endless
               options, zero understanding.
             </p>
           </div>
@@ -263,8 +444,8 @@ export default function LandingPage() {
 
                 {/* Description - Fixed Height */}
                 <p className="text-slate-500 font-light text-sm leading-relaxed mb-4 flex-1">
-                  Infinite lists and categories. We compare endlessly but choose
-                  reactively.
+                  Infinite lists and categories. Users compare endlessly but
+                  choose reactively.
                 </p>
 
                 {/* Stat badge - Always at bottom */}
@@ -340,7 +521,7 @@ export default function LandingPage() {
 
                 {/* Description - Fixed Height */}
                 <p className="text-slate-500 font-light text-sm leading-relaxed mb-4 flex-1">
-                  Too many choices cause paralysis. You pick what's familiar,
+                  Too many choices cause paralysis. Users pick what's familiar,
                   not what's right.
                 </p>
 
@@ -412,7 +593,7 @@ export default function LandingPage() {
 
                 {/* Description - Fixed Height */}
                 <p className="text-slate-500 font-light text-sm leading-relaxed mb-4 flex-1">
-                  Apps track macros but ignore mood, energy, and what your body
+                  Apps track macros but ignore mood, energy, and what user
                   craves.
                 </p>
 
@@ -440,12 +621,11 @@ export default function LandingPage() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  Your emotional state matters as much as macros
+                  Research shows emotional state matters as much as macros
                 </h3>
-                <p className="text-orange-100 font-light text-sm">
-                  NOM understands what your mind and body need—not just what's
-                  nearby.
-                </p>
+                {/* <p className="text-orange-100 font-light text-sm">
+                  Your emotional state matters as much as macros
+                </p> */}
               </div>
 
               <div className="flex items-center gap-6">
@@ -462,186 +642,6 @@ export default function LandingPage() {
                     apps abandoned
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-32 px-4 bg-gradient-to-b from-[#faf9f7] via-white to-[#faf9f7] relative overflow-hidden">
-        {/* Divider */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-200/60 to-transparent" />
-        {/* Subtle Flow Indicators (Desktop Only) */}
-        <div className="hidden lg:block absolute top-[60%] left-0 w-full -translate-y-1/2 z-0 opacity-[0.03]">
-          <div className="flex justify-around items-center px-48">
-            <ArrowRight className="w-24 h-24 text-slate-900" />
-            <ArrowRight className="w-24 h-24 text-slate-900" />
-          </div>
-        </div>
-
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-24 max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif font-medium mb-6 text-slate-900 tracking-tight">
-              How NOM Works
-            </h2>
-            <p className="text-lg text-slate-600 font-light leading-relaxed max-w-xl mx-auto">
-              We believe food is more than fuel. It's an emotional response.
-              NOM's AI understands your mood and orchestrates the perfect meal.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
-            {/* Step 1: Express Intent */}
-            <div className="group">
-              <div className="bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 h-full flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-2 border border-slate-200/60">
-                <div className="mb-8 relative">
-                  <span className="text-orange-500 font-serif italic text-6xl opacity-10 select-none block">
-                    01
-                  </span>
-                  <h3 className="text-xl font-bold -mt-8 relative text-slate-900 z-10">
-                    Express Intent
-                  </h3>
-                </div>
-                <div className="bg-slate-50/80 rounded-2xl p-6 mb-8 flex-grow space-y-4 shadow-inner border border-slate-100">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 font-bold text-xs">
-                      U
-                    </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
-                      User
-                    </span>
-                  </div>
-                  <div className="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm border border-slate-100 text-slate-700 text-sm font-medium">
-                    "I'm stressed and need comfort food."
-                    <span className="block text-[10px] text-orange-500 mt-2 font-bold animate-pulse">
-                      Typing...
-                    </span>
-                  </div>
-                  <div className="flex gap-2 mt-4">
-                    <div className="bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
-                      <Zap className="w-3.5 h-3.5 text-orange-500" /> Stressed
-                    </div>
-                    <div className="bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
-                      <CheckCircle className="w-3.5 h-3.5 text-orange-500" />{" "}
-                      Comfort
-                    </div>
-                  </div>
-                </div>
-                <p className="text-slate-500 text-sm leading-relaxed font-light">
-                  Don't browse menus. Just speak your mind. Our AI recognizes
-                  emotional triggers to filter for what you actually need.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 2: AI Interpretation */}
-            <div className="group">
-              <div className="bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 h-full flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-2 border border-slate-200/60">
-                <div className="mb-8 relative">
-                  <span className="text-orange-500 font-serif italic text-6xl opacity-10 select-none block">
-                    02
-                  </span>
-                  <h3 className="text-xl font-bold -mt-8 relative text-slate-900 z-10">
-                    AI Interpretation
-                  </h3>
-                </div>
-                <div className="bg-slate-900 text-slate-100 rounded-2xl p-6 mb-8 flex-grow space-y-6 shadow-xl relative overflow-hidden">
-                  {/* Subtle inner glow */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 blur-3xl rounded-full"></div>
-
-                  <div className="flex justify-between items-center relative z-10">
-                    <div className="flex items-center gap-2">
-                      <Brain className="w-4 h-4 text-orange-400" />
-                      <span className="text-[10px] font-bold uppercase tracking-widest opacity-80">
-                        NOM Brain
-                      </span>
-                    </div>
-                    <span className="text-[9px] bg-orange-500/20 text-orange-400 px-2.5 py-1 rounded-full font-bold tracking-wider">
-                      CURATING
-                    </span>
-                  </div>
-                  <div className="space-y-4 relative z-10">
-                    <div>
-                      <div className="flex justify-between text-xs mb-1.5">
-                        <span className="text-slate-400">Protein Match</span>
-                        <span className="text-orange-200 font-medium tracking-wide">
-                          High
-                        </span>
-                      </div>
-                      <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                        <div className="bg-orange-500 h-full w-[75%] rounded-full shadow-[0_0_10px_rgba(249,115,22,0.5)]"></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between text-xs pt-1">
-                        <span className="text-slate-400">
-                          Tryptophan & Omega-3
-                        </span>
-                        <span className="text-orange-200 font-medium tracking-wide">
-                          Mood Boost
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="border-t border-slate-800 pt-4 mt-2 relative z-10">
-                    <span className="text-[9px] text-slate-500 block mb-1.5 tracking-widest font-bold">
-                      SMART RECOMMENDATION
-                    </span>
-                    <div className="text-sm font-semibold text-white mb-1">
-                      Miso Ramen with Extra Pork
-                    </div>
-                    <div className="text-[11px] text-slate-400 italic">
-                      "Rich broth triggers serotonin release."
-                    </div>
-                  </div>
-                </div>
-                <p className="text-slate-500 text-sm leading-relaxed font-light">
-                  Our proprietary algorithm translates cravings into nutritional
-                  data, matching your bio-rhythm with the city's top kitchens.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 3: Seamless Delivery */}
-            <div className="group">
-              <div className="bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 h-full flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-2 border border-slate-200/60">
-                <div className="mb-8 relative">
-                  <span className="text-orange-500 font-serif italic text-6xl opacity-10 select-none block">
-                    03
-                  </span>
-                  <h3 className="text-xl font-bold -mt-8 relative text-slate-900 z-10">
-                    Seamless Delivery
-                  </h3>
-                </div>
-                <div className="bg-white rounded-2xl p-6 mb-8 flex-grow border border-slate-100 shadow-sm flex flex-col justify-center items-center gap-6">
-                  <div className="w-20 h-20 rounded-full bg-orange-50/50 flex items-center justify-center p-2 border-2 border-orange-100/50">
-                    <div className="w-full h-full rounded-full bg-orange-100/50 flex items-center justify-center text-2xl shadow-inner">
-                      🍜
-                    </div>
-                  </div>
-                  <button className="w-full bg-slate-900 text-white py-3.5 rounded-full font-semibold shadow-lg shadow-slate-900/10 hover:bg-slate-800 transition-colors text-sm">
-                    Order Now
-                  </button>
-                  <div className="flex items-center gap-5 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-                    <div className="flex items-center font-sans tracking-tighter">
-                      <span className="font-bold text-[15px]">Uber</span>
-                      <span className="font-medium text-[15px] leading-none">
-                        Eats
-                      </span>
-                    </div>
-                    <div className="h-3 w-px bg-slate-400"></div>
-                    <div className="flex items-center font-sans">
-                      <span className="font-black text-[13px] text-[#FF3008] tracking-tighter">
-                        DOORDASH
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-slate-500 text-sm leading-relaxed font-light">
-                  Connect your favorite delivery accounts once. NOM routes the
-                  logistics so you only have to focus on the arrival.
-                </p>
               </div>
             </div>
           </div>
@@ -753,9 +753,9 @@ export default function LandingPage() {
                   Emotional Intelligence
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed font-light">
-                  "Emotion to Nutrition Map". Our system decodes psychological
-                  states to recommend micronutrients that stabilize mood and
-                  amplify cognitive performance.
+                  Leverage our proprietary "Emotion to Nutrition Map" to
+                  understand and predict user preferences, leading to highly
+                  relevant recommendations and increased order frequency.
                 </p>
               </div>
             </div>
@@ -797,9 +797,10 @@ export default function LandingPage() {
                   Natural Language Context
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed font-light">
-                  Beyond keywords. NOM understands nuance. Whether you're
-                  recovering from a flight or celebrating a win, our AI
-                  translates sentiment into menu architecture.
+                  Our AI interprets nuanced user requests, ensuring
+                  recommendations align with specific occasions, dietary needs,
+                  or mood states, reducing order hesitation and improving
+                  customer satisfaction.
                 </p>
               </div>
             </div>
@@ -902,9 +903,9 @@ export default function LandingPage() {
                   Evolutionary Profile
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed font-light">
-                  Your palate is dynamic. NOM tracks your feedback loop and
-                  bio-markers to refine your taste profile, ensuring every meal
-                  is more "you" than the last.
+                  Continuously refine user taste profiles and preferences based
+                  on feedback and order history, fostering long-term customer
+                  loyalty and repeat business.
                 </p>
               </div>
             </div>
@@ -948,19 +949,17 @@ export default function LandingPage() {
                 <Zap className="w-7 h-7 text-orange-500" />
               </div>
               <h3 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-6">
-                Built For Managing Your Daily Health
+                Unlock New Revenue Streams & Enhance Customer Loyalty:
               </h3>
-              <p className="text-slate-500 font-light leading-relaxed mb-6">
-                NOM brings mindfulness to your busy schedule. We instantly connect your cravings and goals with your
-                favorite local spots—no endless menus, just exactly what you need.
-              </p>
+
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                     <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
                   </div>
                   <span className="text-slate-600 font-light">
-                    Save hours of decision-making each week
+                    Increase Order Conversion: Reduce decision fatigue for your
+                    users.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -968,7 +967,8 @@ export default function LandingPage() {
                     <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
                   </div>
                   <span className="text-slate-600 font-light">
-                    Easily discover healthier, locally-sourced options
+                    Boost Customer Retention: Offer a truly personalized and
+                    satisfying experience.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -976,7 +976,8 @@ export default function LandingPage() {
                     <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
                   </div>
                   <span className="text-slate-600 font-light">
-                    Meals curated for your physical and emotional state
+                    Optimize Operational Efficiency: Streamline the
+                    recommendation process.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -984,14 +985,16 @@ export default function LandingPage() {
                     <CheckCircle className="w-3.5 h-3.5 text-orange-500" />
                   </div>
                   <span className="text-slate-600 font-light">
-                    One-tap ordering through existing delivery platforms
+                    Expand Market Reach: Attract new user segments seeking
+                    health-conscious, personalized, and emotionally intelligent
+                    meal solutions.
                   </span>
                 </li>
               </ul>
             </div>
 
             {/* Right: Category Creation */}
-            <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-xl shadow-slate-900/5 relative card-hover-lift gradient-border">
+            <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-xl shadow-slate-900/5 relative card-hover-lift ">
               {/* Corner decoration */}
               <svg
                 className="absolute -top-3 -right-3 w-8 h-8 text-orange-400"
@@ -1009,19 +1012,19 @@ export default function LandingPage() {
                 <Layers className="w-7 h-7 text-slate-600" />
               </div>
               <h3 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">
-                A New Category
+                Ready to Transform Your Food Delivery Experience?
               </h3>
               <p className="text-orange-500 font-medium text-sm mb-4">
                 Emotional + Intent-Based Meal Intelligence
               </p>
               <p className="text-slate-500 font-light leading-relaxed mb-4">
-                Delivery apps focus on logistics. Diet apps focus on macros. AI
-                chatbots can talk but aren't connected to real menus. NOM
-                bridges all four worlds.
+                Partner with NOM: Contact us today to learn how NOM can
+                integrate with your platform and drive significant value for
+                your business and your customers.
               </p>
               <p className="text-slate-500 font-light leading-relaxed">
-                We combine emotion, intent, real-time menu intelligence, and
-                fulfilment to deliver the right meal for the right moment.
+                Request a Demo: See NOM in action and discover the power of
+                AI-powered meal personalization for your food delivery platform.
               </p>
             </div>
           </div>
@@ -1045,16 +1048,13 @@ export default function LandingPage() {
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
-                Eat With Intention
+                Get Early Access
               </h2>
               <p className="text-slate-300 text-lg mb-4 font-light max-w-xl mx-auto">
-                Not just what's available. Not just what's nearby. What your
-                mind, body, and soul truly need.
+                See NOM in action. Contact us for more details. We are currently
+                onboarding beta clients
               </p>
-              <p className="text-slate-400 text-sm mb-8 font-light max-w-2xl mx-auto">
-                Join our waitlist today to be among the first to experience frictionless, health-conscious dining.
-                Get ready to ditch decision fatigue forever.
-              </p>
+
               <Link href="/contact">
                 <Button
                   size="lg"
