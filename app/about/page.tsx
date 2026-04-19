@@ -146,8 +146,8 @@ export default function AboutPage() {
               </p>
               <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
                 We're pioneering Emotional + Intent-Based Meal Intelligence.
-                No other app does this—understanding how you feel and
-                translating that into the perfect meal for you.
+                Understanding how you feel and translating that into the perfect
+                meal for you.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center text-slate-600">
@@ -283,8 +283,8 @@ export default function AboutPage() {
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed">
                   We believe food is more than fuel. Every recommendation
-                  considers your emotional state, physical needs, and personal
-                  goals to support your overall wellbeing.
+                  considers emotional state, physical needs, and personal goals
+                  to support overall wellbeing.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -550,7 +550,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden shadow-2xl">
             {/* Background decorations */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
               <div className="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
@@ -564,32 +564,22 @@ export default function AboutPage() {
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
-                Join Us on This Journey
+                Get Early Access
               </h2>
-              <p className="text-slate-300 text-lg mb-8 font-light max-w-xl mx-auto">
-                We're always looking for passionate people who want to
-                revolutionize how the world eats.
+              <p className="text-slate-300 text-lg mb-4 font-light max-w-xl mx-auto">
+                See NOM in action. Contact us for more details. We are currently
+                onboarding beta clients
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-orange-500 text-white hover:bg-orange-600 text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/25 group"
-                  >
-                    Get in Touch
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-                <Link href="/features">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-transparent text-white border-2 border-white/20 hover:bg-white/10 text-base px-10 py-6 rounded-full font-medium"
-                  >
-                    Explore Features
-                  </Button>
-                </Link>
-              </div>
+
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/30 group transition-all hover:scale-[1.02] animate-pulse-glow"
+                >
+                  Join the Waitlist
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

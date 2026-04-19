@@ -87,7 +87,7 @@ export default function HowItWorksPage() {
           </Badge>
 
           <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900 tracking-tight">
-            The{" "}
+            How The{" "}
             <span className="relative inline-block">
               <span className="text-orange-500">Engine</span>
               {/* Underline doodle */}
@@ -109,8 +109,8 @@ export default function HowItWorksPage() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-            Four seamless steps that transform your emotional state and needs
-            into the perfect meal recommendation.
+            The steps that transform your emotional state and needs into the
+            perfect meal recommendation.
           </p>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function HowItWorksPage() {
               Simple Process
             </p>
             <h3 className="text-2xl font-semibold text-slate-900">
-              Four Steps to Your Perfect Meal
+              Steps to Your Perfect Meal
             </h3>
           </div>
 
@@ -329,58 +329,6 @@ export default function HowItWorksPage() {
                   />
                 </svg>
               </div>
-
-              {/* Arrow 3 - Desktop */}
-              <div className="hidden md:flex items-center justify-center flex-1 max-w-[80px]">
-                <svg className="w-full h-8 text-slate-300" viewBox="0 0 100 32">
-                  <path
-                    d="M0,16 Q25,16 50,16 T85,16"
-                    fill="none"
-                    stroke="#cbd5e1"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeDasharray="6 4"
-                  />
-                  <path
-                    d="M80,10 L90,16 L80,22"
-                    fill="none"
-                    stroke="#cbd5e1"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-
-              {/* Step 4 */}
-              <div className="flex flex-col items-center text-center group">
-                <div className="relative mb-6">
-                  {/* Outer ring */}
-                  <div className="absolute -inset-3 bg-orange-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  {/* Step number badge */}
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-white border-2 border-orange-200 rounded-full flex items-center justify-center z-10">
-                    <span className="text-xs font-bold text-orange-500">4</span>
-                  </div>
-                  {/* Sparkle decoration */}
-                  <svg
-                    className="absolute -top-4 -left-4 w-5 h-5 text-orange-300"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M12,0 L13,9 L24,12 L13,15 L12,24 L11,15 L0,12 L11,9 Z" />
-                  </svg>
-                  {/* Icon container */}
-                  <div className="relative w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-200 group-hover:scale-110 transition-transform duration-300">
-                    <Truck className="w-7 h-7 text-white" />
-                  </div>
-                </div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">
-                  Seamless Ordering
-                </h4>
-                <p className="text-sm text-slate-500 font-light max-w-[140px]">
-                  Direct connection to delivery platforms
-                </p>
-              </div>
             </div>
           </div>
 
@@ -439,33 +387,32 @@ export default function HowItWorksPage() {
                       <MessageSquare className="w-7 h-7 text-white" />
                     </div>
                     <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      User Input
+                      Empowering Customers with Intuitive Intent Expression
                     </h2>
                   </div>
                   <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    Express how you feel or what you need in natural language.
-                    Say things like "I'm anxious—what should I eat?" or "I want
-                    something comforting but clean" or "I just finished a
-                    workout—suggest something nourishing."
+                    NOM enables your users to articulate their meal preferences
+                    and needs using natural language, moving beyond restrictive
+                    menus and filters.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-orange-500" />
                       </div>
-                      <span>Emotional state recognition</span>
+                      <span>Enhanced User Engagement</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-orange-500" />
                       </div>
-                      <span>Physical needs understanding</span>
+                      <span>Richer Data Insights</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-orange-500" />
                       </div>
-                      <span>Situational context parsing</span>
+                      <span>Reduced Decision Fatigue</span>
                     </div>
                   </div>
                 </div>
@@ -526,32 +473,32 @@ export default function HowItWorksPage() {
                       <Brain className="w-7 h-7 text-white" />
                     </div>
                     <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      Intent Interpretation
+                      Advanced AI for Precise User Understanding
                     </h2>
                   </div>
                   <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    AI analyzes your mood, craving, nutrition needs, cuisine
-                    preferences, context, and dietary restrictions to understand
-                    what your body and mind truly need right now.
+                    Our proprietary AI engine meticulously analyzes user input,
+                    interpreting mood, nutritional requirements, cuisine
+                    preferences, and dietary restrictions.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Mood and emotional analysis</span>
+                      <span>Superior Personalization</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Nutritional needs assessment</span>
+                      <span>Increased Order Accuracy</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Context and preference matching</span>
+                      <span>Competitive Differentiation</span>
                     </div>
                   </div>
                 </div>
@@ -624,32 +571,31 @@ export default function HowItWorksPage() {
                       <Utensils className="w-7 h-7 text-white" />
                     </div>
                     <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      Intelligent Curation
+                      Optimizing Menu Discovery and Conversion
                     </h2>
                   </div>
                   <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    AI analyzes millions of menu items, ingredients, and
-                    nutritional profiles to curate the perfect meal options
-                    tailored to your specific intent and preferences.
+                    NOM's AI dynamically analyzes your vast network of
+                    restaurant menus, ingredients, and nutritional data.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Advanced menu analysis and filtering</span>
+                      <span>Maximized Restaurant Visibility</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Nutritional optimization algorithms</span>
+                      <span>Higher Conversion Rates</span>
                     </div>
                     <div className="flex items-center text-slate-600">
                       <div className="w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-slate-600" />
                       </div>
-                      <span>Personalized ranking and curation</span>
+                      <span>Dynamic Menu Management</span>
                     </div>
                   </div>
                 </div>
@@ -702,141 +648,6 @@ export default function HowItWorksPage() {
                       </span>
                       <div className="w-20 h-2 bg-slate-200 rounded-full overflow-hidden">
                         <div className="w-3/5 h-full bg-gradient-to-r from-slate-500 to-slate-600 rounded-full animate-pulse"></div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="relative md:order-2">
-                {/* Step number background */}
-                <div className="absolute -top-8 -left-4 text-[120px] font-bold text-slate-100 leading-none select-none">
-                  04
-                </div>
-                <div className="relative z-10">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-200">
-                      <Truck className="w-7 h-7 text-white" />
-                    </div>
-                    <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
-                      Seamless Ordering
-                    </h2>
-                  </div>
-                  <p className="text-lg text-slate-500 mb-8 font-light leading-relaxed">
-                    Plugin connects directly to delivery platforms like Uber
-                    Eats, Grab, and DoorDash for instant fulfillment. One click
-                    and your perfect meal is on its way.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center text-slate-600">
-                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-orange-500" />
-                      </div>
-                      <span>Direct platform integration</span>
-                    </div>
-                    <div className="flex items-center text-slate-600">
-                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-orange-500" />
-                      </div>
-                      <span>One-click ordering</span>
-                    </div>
-                    <div className="flex items-center text-slate-600">
-                      <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-orange-500" />
-                      </div>
-                      <span>Real-time delivery tracking</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative md:order-1">
-                {/* Corner decorations */}
-                <svg
-                  className="absolute -top-4 -right-4 w-6 h-6 text-orange-300"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12,0 L13,9 L24,12 L13,15 L12,24 L11,15 L0,12 L11,9 Z" />
-                </svg>
-
-                <Card className="bg-white border-2 border-slate-100 rounded-3xl shadow-xl shadow-slate-100/50 overflow-hidden">
-                  <CardHeader className="bg-gradient-to-r from-slate-50 to-white border-b border-slate-100">
-                    <CardTitle className="text-slate-900 flex items-center text-lg">
-                      <Route className="w-5 h-5 mr-3 text-orange-500" />
-                      Delivery Timeline
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-6">
-                    <div className="space-y-6">
-                      <div className="flex items-start gap-4">
-                        <div className="flex flex-col items-center">
-                          <div className="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center">
-                            <Clock className="w-5 h-5 text-orange-500" />
-                          </div>
-                          <div className="w-0.5 h-8 bg-slate-200 mt-2"></div>
-                        </div>
-                        <div className="pt-2">
-                          <p className="text-slate-700 font-medium">
-                            Order placed
-                          </p>
-                          <p className="text-slate-400 text-sm">
-                            Restaurants notified instantly
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="flex flex-col items-center">
-                          <div className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center">
-                            <Utensils className="w-5 h-5 text-slate-600" />
-                          </div>
-                          <div className="w-0.5 h-8 bg-slate-200 mt-2"></div>
-                        </div>
-                        <div className="pt-2">
-                          <p className="text-slate-700 font-medium">
-                            Preparation begins
-                          </p>
-                          <p className="text-slate-400 text-sm">
-                            Synchronized cooking times
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="flex flex-col items-center">
-                          <div className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center">
-                            <MapPin className="w-5 h-5 text-slate-600" />
-                          </div>
-                          <div className="w-0.5 h-8 bg-slate-200 mt-2"></div>
-                        </div>
-                        <div className="pt-2">
-                          <p className="text-slate-700 font-medium">
-                            Coordinated pickup
-                          </p>
-                          <p className="text-slate-400 text-sm">
-                            Optimal route planning
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="flex flex-col items-center">
-                          <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center">
-                            <Star className="w-5 h-5 text-white" />
-                          </div>
-                        </div>
-                        <div className="pt-2">
-                          <p className="text-slate-700 font-medium">
-                            Perfect delivery
-                          </p>
-                          <p className="text-slate-400 text-sm">
-                            Fresh, hot, and on time
-                          </p>
-                        </div>
                       </div>
                     </div>
                   </CardContent>
@@ -972,7 +783,7 @@ export default function HowItWorksPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden shadow-2xl">
             {/* Background decorations */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
               <div className="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
@@ -986,33 +797,22 @@ export default function HowItWorksPage() {
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
-                Ready to Experience the Magic?
+                Get Early Access
               </h2>
-              <p className="text-slate-300 text-lg mb-8 font-light max-w-xl mx-auto">
-                Start your journey to perfectly crafted meals with just a simple
-                prompt.
+              <p className="text-slate-300 text-lg mb-4 font-light max-w-xl mx-auto">
+                See NOM in action. Contact us for more details. We are currently
+                onboarding beta clients
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-orange-500 text-white hover:bg-orange-600 text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/25 group"
-                  >
-                    Join the Waitlist
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
 
-                <Link href="/features">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-transparent text-white border-2 border-white/20 hover:bg-white/10 text-base px-10 py-6 rounded-full font-medium"
-                  >
-                    Explore Features
-                  </Button>
-                </Link>
-              </div>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/30 group transition-all hover:scale-[1.02] animate-pulse-glow"
+                >
+                  Join the Waitlist
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

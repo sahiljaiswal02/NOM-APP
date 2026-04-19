@@ -379,8 +379,8 @@ export default function FeaturesPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-slate-500 font-light leading-relaxed text-base mb-5">
-                  Your data stays yours. We use your preferences only to
-                  improve recommendations—never sold, never shared.
+                  Your data stays yours. We use your preferences only to improve
+                  recommendations—never sold, never shared.
                 </CardDescription>
                 <div className="space-y-3">
                   <div className="flex items-center text-slate-600 text-sm">
@@ -456,9 +456,7 @@ export default function FeaturesPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
-              <div className="text-3xl font-bold text-orange-500 mb-2">
-                30s
-              </div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">30s</div>
               <p className="text-slate-600 font-light text-sm">
                 From opening the app to finding your perfect meal
               </p>
@@ -472,7 +470,9 @@ export default function FeaturesPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
-              <div className="text-3xl font-bold text-orange-500 mb-2">100%</div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">
+                100%
+              </div>
               <p className="text-slate-600 font-light text-sm">
                 Personalised to your mood, body, and lifestyle
               </p>
@@ -648,7 +648,7 @@ export default function FeaturesPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden shadow-2xl">
             {/* Background decorations */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
               <div className="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
@@ -662,33 +662,22 @@ export default function FeaturesPage() {
 
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
-                Experience the Future of Food
+                Get Early Access
               </h2>
-              <p className="text-slate-300 text-lg mb-8 font-light max-w-xl mx-auto">
-                Join thousands of food lovers who've discovered the perfect way
-                to eat with AI-powered meal curation.
+              <p className="text-slate-300 text-lg mb-4 font-light max-w-xl mx-auto">
+                See NOM in action. Contact us for more details. We are currently
+                onboarding beta clients
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-orange-500 text-white hover:bg-orange-600 text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/25 group"
-                  >
-                    Get Started Now
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
 
-                <Link href="/how-it-works">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-transparent text-white border-2 border-white/20 hover:bg-white/10 text-base px-10 py-6 rounded-full font-medium"
-                  >
-                    Learn How It Works
-                  </Button>
-                </Link>
-              </div>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-base px-10 py-6 rounded-full font-medium shadow-lg shadow-orange-500/30 group transition-all hover:scale-[1.02] animate-pulse-glow"
+                >
+                  Join the Waitlist
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
