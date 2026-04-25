@@ -458,14 +458,14 @@ export default function FeaturesPage() {
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
               <div className="text-3xl font-bold text-orange-500 mb-2">30s</div>
               <p className="text-slate-600 font-light text-sm">
-                From opening the app to finding your perfect meal
+                From opening the app to finding the perfect meal
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
               <div className="text-3xl font-bold text-slate-700 mb-2">Zero</div>
               <p className="text-slate-600 font-light text-sm">
-                Decision fatigue—NOM handles the thinking for you
+                Decision fatigue—NOM handles the thinking for the user
               </p>
             </div>
 
@@ -474,14 +474,14 @@ export default function FeaturesPage() {
                 100%
               </div>
               <p className="text-slate-600 font-light text-sm">
-                Personalised to your mood, body, and lifestyle
+                Personalised to the user's mood, body, and lifestyle
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 text-center">
               <div className="text-3xl font-bold text-slate-700 mb-2">∞</div>
               <p className="text-slate-600 font-light text-sm">
-                New discoveries—meals you never knew you needed
+                New discoveries—meals users never knew they needed
               </p>
             </div>
           </div>
